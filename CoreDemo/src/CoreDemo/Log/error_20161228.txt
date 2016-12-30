@@ -1,0 +1,193 @@
+2016-12-28T17:46:30.7348182+05:30 0HL1F3DDJTAC2 [INF] Request starting HTTP/1.1 DEBUG http://localhost:53303/  0 (e5be5b71)
+2016-12-28T17:46:30.7348182+05:30 0HL1F3DDJTAC3 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-28T17:46:30.9789319+05:30 0HL1F3DDJTAC2 [INF] Request finished in 350.3037ms 200  (15c52c40)
+2016-12-28T17:46:31.7209731+05:30 0HL1F3DDJTAC3 [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-28T17:46:38.8024236+05:30 0HL1F3DDJTAC3 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-28T17:46:41.9175094+05:30 0HL1F3DDJTAC3 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-28T17:46:42.0322180+05:30 0HL1F3DDJTAC3 [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2016-12-28T17:46:42.6124340+05:30 0HL1F3DDJTAC3 [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 11190.1066ms (afa2e885)
+2016-12-28T17:46:42.8324690+05:30 0HL1F3DDJTAC3 [INF] Request finished in 12214.1633ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-28T17:46:46.2446163+05:30 0HL1F3DDJTAC4 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-28T17:46:46.2536223+05:30 0HL1F3DDJTAC4 [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-28T17:46:46.3092649+05:30 0HL1F3DDJTAC4 [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-28T17:46:47.0737548+05:30 0HL1F3DDJTAC4 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-28T17:46:47.0797590+05:30 0HL1F3DDJTAC4 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-28T17:46:47.0837615+05:30 0HL1F3DDJTAC4 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-28T17:46:47.0887649+05:30 0HL1F3DDJTAC4 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-28T17:46:47.0917663+05:30 0HL1F3DDJTAC4 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-28T17:46:47.1287909+05:30 0HL1F3DDJTAC4 [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 846.4725ms (afa2e885)
+2016-12-28T17:46:47.1558073+05:30 0HL1F3DDJTAC4 [INF] Request finished in 896.3246ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-28T17:46:50.0214624+05:30 0HL1F3DDJTAC5 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-28T17:46:50.0240908+05:30 0HL1F3DDJTAC5 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-28T17:46:50.1478223+05:30 0HL1F3DDJTAC5 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-28T17:46:53.2695677+05:30 0HL1F3DDJTAC5 [INF] Executed DbCommand (51ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-28T17:47:04.2607051+05:30 0HL1F3DDJTAC5 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view 'Components/First/Default' was not found. The following locations were searched:
+/Views/Home/Components/First/Default.cshtml
+/Views/Shared/Components/First/Default.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.<ExecuteAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Views_Home_Contact_cshtml.<ExecuteAsync>d__25.MoveNext() in /Views/Home/Contact.cshtml:line 9
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultFilterAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllResultFiltersAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResourceFilterAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__6.MoveNext()
+2016-12-28T17:47:04.5759073+05:30 0HL1F3DDJTAC5 [INF] Request finished in 14542.079ms 500 text/html; charset=utf-8 (15c52c40)
+2016-12-28T17:47:12.2749997+05:30 0HL1F3DDJTAC6 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-28T17:47:12.2820047+05:30 0HL1F3DDJTAC6 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-28T17:47:12.2870074+05:30 0HL1F3DDJTAC6 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-28T17:47:21.5321970+05:30 0HL1F3DDJTAC6 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-28T17:47:27.2350395+05:30 0HL1F3DDJTAC6 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view 'Components/First/Default' was not found. The following locations were searched:
+/Views/Home/Components/First/Default.cshtml
+/Views/Shared/Components/First/Default.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.<ExecuteAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.<InvokeAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.<InvokeCoreAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AspNetCore._Views_Home_Contact_cshtml.<ExecuteAsync>d__25.MoveNext() in /Views/Home/Contact.cshtml:line 9
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultFilterAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllResultFiltersAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResourceFilterAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__6.MoveNext()
+2016-12-28T17:47:27.3481106+05:30 0HL1F3DDJTAC6 [INF] Request finished in 15050.2764ms 500 text/html; charset=utf-8 (15c52c40)
+2016-12-28T17:50:23.1184415+05:30 0HL1F3FIS0NGK [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-28T17:50:23.1184415+05:30 0HL1F3FIS0NGL [INF] Request starting HTTP/1.1 DEBUG http://localhost:53303/  0 (e5be5b71)
+2016-12-28T17:50:23.2325138+05:30 0HL1F3FIS0NGL [INF] Request finished in 175.2132ms 200  (15c52c40)
+2016-12-28T17:50:23.9004230+05:30 0HL1F3FIS0NGK [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-28T17:50:25.1219068+05:30 0HL1F3FIS0NGK [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-28T17:50:27.7919556+05:30 0HL1F3FIS0NGK [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-28T17:50:27.9133248+05:30 0HL1F3FIS0NGK [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2016-12-28T17:50:28.4136410+05:30 0HL1F3FIS0NGK [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 4741.5911ms (afa2e885)
+2016-12-28T17:50:28.5547289+05:30 0HL1F3FIS0NGK [INF] Request finished in 5515.9159ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-28T17:50:31.1609149+05:30 0HL1F3FIS0NGM [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-28T17:50:31.1669183+05:30 0HL1F3FIS0NGM [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-28T17:50:31.2639800+05:30 0HL1F3FIS0NGM [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-28T17:50:55.7072075+05:30 0HL1F3FIS0NGM [INF] Executed DbCommand (57ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-28T17:50:57.8994455+05:30 0HL1F3FIS0NGM [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 26701.4654ms (afa2e885)
+2016-12-28T17:50:57.9184580+05:30 0HL1F3FIS0NGM [INF] Request finished in 26755.9886ms 200 text/html; charset=utf-8 (15c52c40)

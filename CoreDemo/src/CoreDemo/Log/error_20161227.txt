@@ -1,0 +1,274 @@
+2016-12-27T19:58:33.4201686+05:30 0HL1ECIHHR2AI [INF] Request starting HTTP/1.1 DEBUG http://localhost:53303/  0 (e5be5b71)
+2016-12-27T19:58:33.5132123+05:30 0HL1ECIHHR2AJ [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-27T19:58:33.6542960+05:30 0HL1ECIHHR2AI [INF] Request finished in 268.8016ms 200  (15c52c40)
+2016-12-27T19:58:34.1225854+05:30 0HL1ECIHHR2AJ [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T19:58:36.9882377+05:30 0HL1ECIHHR2AJ [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-27T19:58:37.0852991+05:30 0HL1ECIHHR2AJ [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2016-12-27T19:58:37.6267349+05:30 0HL1ECIHHR2AJ [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 3570.4534ms (afa2e885)
+2016-12-27T19:58:37.6577539+05:30 0HL1ECIHHR2AK [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-27T19:58:37.7577568+05:30 0HL1ECIHHR2AL [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-27T19:58:37.7637609+05:30 0HL1ECIHHR2AL [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2016-12-27T19:58:37.7637609+05:30 0HL1ECIHHR2AK [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\css\site.css"' (27b0a520)
+2016-12-27T19:58:37.9263761+05:30 0HL1ECIHHR2AL [INF] Request finished in 227.0235ms 200 text/css (15c52c40)
+2016-12-27T19:58:37.9313790+05:30 0HL1ECIHHR2AJ [INF] Request finished in 4586.5889ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-27T19:58:37.9323802+05:30 0HL1ECIHHR2AM [INF] Request starting HTTP/1.1 GET http://localhost:53303/images/banner1.svg   (e5be5b71)
+2016-12-27T19:58:37.9353819+05:30 0HL1ECIHHR2AM [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\images\banner1.svg"' (27b0a520)
+2016-12-27T19:58:37.9453885+05:30 0HL1ECIHHR2AN [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-27T19:58:37.9493907+05:30 0HL1ECIHHR2AN [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\js\site.js"' (27b0a520)
+2016-12-27T19:58:37.9533935+05:30 0HL1ECIHHR2AK [INF] Request finished in 271.4481ms 200 text/css (15c52c40)
+2016-12-27T19:58:37.9724049+05:30 0HL1ECIHHR2AN [INF] Request finished in 26.1907ms 200 application/javascript (15c52c40)
+2016-12-27T19:58:37.9774075+05:30 0HL1ECIHHR2AO [INF] Request starting HTTP/1.1 GET http://localhost:53303/images/banner4.svg   (e5be5b71)
+2016-12-27T19:58:37.9844118+05:30 0HL1ECIHHR2AM [INF] Request finished in 53.5011ms 200 image/svg+xml (15c52c40)
+2016-12-27T19:58:37.9884150+05:30 0HL1ECIHHR2AP [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (e5be5b71)
+2016-12-27T19:58:37.9934179+05:30 0HL1ECIHHR2AP [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2016-12-27T19:58:37.9984220+05:30 0HL1ECIHHR2AQ [INF] Request starting HTTP/1.1 GET http://localhost:53303/images/banner2.svg   (e5be5b71)
+2016-12-27T19:58:38.0014233+05:30 0HL1ECIHHR2AQ [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\images\banner2.svg"' (27b0a520)
+2016-12-27T19:58:38.0044257+05:30 0HL1ECIHHR2AO [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\images\banner4.svg"' (27b0a520)
+2016-12-27T19:58:38.0644651+05:30 0HL1ECIHHR2AO [INF] Request finished in 86.9508ms 200 image/svg+xml (15c52c40)
+2016-12-27T19:58:38.0894785+05:30 0HL1ECIHHR2AQ [INF] Request finished in 99.5006ms 200 image/svg+xml (15c52c40)
+2016-12-27T19:58:38.0924806+05:30 0HL1ECIHHR2AR [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-27T19:58:38.1275027+05:30 0HL1ECIHHR2AP [INF] Request finished in 102.9859ms 200 application/font-woff2 (15c52c40)
+2016-12-27T19:58:38.1415111+05:30 0HL1ECIHHR2AR [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2016-12-27T19:58:38.1585223+05:30 0HL1ECIHHR2AS [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-27T19:58:38.2275655+05:30 0HL1ECIHHR2AS [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2016-12-27T19:58:38.2325677+05:30 0HL1ECIHHR2AT [INF] Request starting HTTP/1.1 GET http://localhost:53303/images/banner3.svg   (e5be5b71)
+2016-12-27T19:58:38.2375717+05:30 0HL1ECIHHR2AT [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\images\banner3.svg"' (27b0a520)
+2016-12-27T19:58:38.2846010+05:30 0HL1ECIHHR2AT [INF] Request finished in 131.8075ms 200 image/svg+xml (15c52c40)
+2016-12-27T19:58:38.3066141+05:30 0HL1ECIHHR2AS [INF] Request finished in 175.6846ms 200 application/javascript (15c52c40)
+2016-12-27T19:58:38.3306299+05:30 0HL1ECIHHR2AR [INF] Request finished in 228.0732ms 200 application/javascript (15c52c40)
+2016-12-27T19:58:38.4386977+05:30 0HL1ECIHHR2AU [INF] Request starting HTTP/1.1 GET http://localhost:53303/favicon.ico   (e5be5b71)
+2016-12-27T19:58:38.4427005+05:30 0HL1ECIHHR2AU [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\favicon.ico"' (27b0a520)
+2016-12-27T19:58:38.4677157+05:30 0HL1ECIHHR2AU [INF] Request finished in 25.1226ms 200 image/x-icon (15c52c40)
+2016-12-27T19:58:42.4426910+05:30 0HL1ECIHHR2AV [INF] Request starting HTTP/1.1 GET http://localhost:53303/Default   (e5be5b71)
+2016-12-27T19:58:42.4567001+05:30 0HL1ECIHHR2AV [INF] Executing action method "CoreDemo.Controllers.DefaultController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T19:58:42.4657056+05:30 0HL1ECIHHR2AV [INF] This is the start method (d4d19a4a)
+2016-12-27T19:58:42.4747111+05:30 0HL1ECIHHR2AV [ERR] The view '"Index"' was not found. Searched locations: ["/Views/Default/Index.cshtml", "/Views/Shared/Index.cshtml"] (9bb2756c)
+2016-12-27T19:58:42.6948487+05:30 0HL1ECIHHR2AV [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Default/Index.cshtml
+/Views/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultFilterAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllResultFiltersAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResourceFilterAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__6.MoveNext()
+2016-12-27T19:58:42.8669570+05:30 0HL1ECIHHR2AV [INF] Request finished in 422.3499ms 500 text/html; charset=utf-8 (15c52c40)
+2016-12-27T19:58:46.5861298+05:30 0HL1ECIHHR2B0 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Default1   (e5be5b71)
+2016-12-27T19:58:46.5921361+05:30 0HL1ECIHHR2B0 [INF] Request finished in 6.4258ms 404  (15c52c40)
+2016-12-27T19:58:55.1279030+05:30 0HL1ECIHHR2B1 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Default/Index   (e5be5b71)
+2016-12-27T19:58:55.1329066+05:30 0HL1ECIHHR2B1 [INF] Executing action method "CoreDemo.Controllers.DefaultController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T19:58:55.1359083+05:30 0HL1ECIHHR2B1 [INF] This is the start method (d4d19a4a)
+2016-12-27T19:58:55.1439134+05:30 0HL1ECIHHR2B1 [ERR] The view '"Index"' was not found. Searched locations: ["/Views/Default/Index.cshtml", "/Views/Shared/Index.cshtml"] (9bb2756c)
+2016-12-27T19:58:55.1808001+05:30 0HL1ECIHHR2B1 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/Default/Index.cshtml
+/Views/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultFilterAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllResultFiltersAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResourceFilterAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__6.MoveNext()
+2016-12-27T19:58:55.2348362+05:30 0HL1ECIHHR2B1 [INF] Request finished in 104.5445ms 500 text/html; charset=utf-8 (15c52c40)
+2016-12-27T22:14:00.3759244+05:30 0HL1EEU7IH4JI [INF] Request starting HTTP/1.1 DEBUG http://localhost:53303/  0 (e5be5b71)
+2016-12-27T22:14:00.3759244+05:30 0HL1EEU7IH4JH [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-27T22:14:00.5400244+05:30 0HL1EEU7IH4JI [INF] Request finished in 231.8571ms 200  (15c52c40)
+2016-12-27T22:14:01.2094808+05:30 0HL1EEU7IH4JH [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T22:14:05.4709159+05:30 0HL1EEU7IH4JH [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-27T22:33:38.6527633+05:30 0HL1EF96NECJG [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-27T22:33:38.6527633+05:30 0HL1EF96NECJH [INF] Request starting HTTP/1.1 DEBUG http://localhost:53303/  0 (e5be5b71)
+2016-12-27T22:33:38.7510213+05:30 0HL1EF96NECJH [INF] Request finished in 183.7519ms 200  (15c52c40)
+2016-12-27T22:33:39.5044888+05:30 0HL1EF96NECJG [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T22:33:43.5695888+05:30 0HL1EF96NECJG [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-27T22:33:46.4568840+05:30 0HL1EF96NECJG [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-27T22:33:46.5606991+05:30 0HL1EF96NECJG [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2016-12-27T22:33:47.0590098+05:30 0HL1EF96NECJG [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 7780.5082ms (afa2e885)
+2016-12-27T22:33:47.2660798+05:30 0HL1EF96NECJG [INF] Request finished in 8710.5303ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-27T22:33:48.6381796+05:30 0HL1EF96NECJI [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-27T22:33:48.6441851+05:30 0HL1EF96NECJI [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T22:33:48.7002159+05:30 0HL1EF96NECJI [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-27T22:33:48.8277820+05:30 0HL1EF96NECJI [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: No service for type 'CoreDemo.Models.EmpDetails' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.<>c__DisplayClass16_0.<CreateActivateInfo>b__1(ViewContext context)
+   at Microsoft.Extensions.Internal.PropertyActivator`1.Activate(Object instance, TContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultFilterAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllResultFiltersAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResourceFilterAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__6.MoveNext()
+2016-12-27T22:33:49.0229029+05:30 0HL1EF96NECJI [INF] Request finished in 383.4306ms 500 text/html; charset=utf-8 (15c52c40)
+2016-12-27T22:35:26.0958472+05:30 0HL1EF96NECJJ [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-27T22:35:26.1114726+05:30 0HL1EF96NECJJ [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T22:35:26.1114726+05:30 0HL1EF96NECJJ [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-27T22:35:26.1739733+05:30 0HL1EF96NECJJ [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.InvalidOperationException: No service for type 'CoreDemo.Models.EmpDetails' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.<>c__DisplayClass16_0.<CreateActivateInfo>b__1(ViewContext context)
+   at Microsoft.Extensions.Internal.PropertyActivator`1.Activate(Object instance, TContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderPageAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.<RenderAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.<ExecuteAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.ViewResult.<ExecuteResultAsync>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResultFilterAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAllResultFiltersAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeResourceFilterAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.ApplicationInsights.AspNetCore.ExceptionTrackingMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__6.MoveNext()
+2016-12-27T22:35:26.2520998+05:30 0HL1EF96NECJJ [INF] Request finished in 160.4901ms 500 text/html; charset=utf-8 (15c52c40)
+2016-12-27T22:35:48.4700770+05:30 0HL1EFADDGMSJ [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-27T22:35:48.5641356+05:30 0HL1EFADDGMSK [INF] Request starting HTTP/1.1 DEBUG http://localhost:53303/  0 (e5be5b71)
+2016-12-27T22:35:48.6231724+05:30 0HL1EFADDGMSK [INF] Request finished in 188.7533ms 200  (15c52c40)
+2016-12-27T22:35:49.2226599+05:30 0HL1EFADDGMSJ [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T22:35:56.8098253+05:30 0HL1EFADDGMSJ [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-27T22:35:59.3219161+05:30 0HL1EFADDGMSJ [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-27T22:35:59.4216935+05:30 0HL1EFADDGMSJ [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2016-12-27T22:35:59.9040024+05:30 0HL1EFADDGMSJ [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 10904.7054ms (afa2e885)
+2016-12-27T22:36:00.0303913+05:30 0HL1EFADDGMSJ [INF] Request finished in 11610.0284ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-27T22:36:01.3390875+05:30 0HL1EFADDGMSL [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-27T22:36:01.3657999+05:30 0HL1EFADDGMSL [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-27T22:36:01.4198019+05:30 0HL1EFADDGMSL [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-27T22:36:02.0822253+05:30 0HL1EFADDGMSL [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-27T22:36:02.0882306+05:30 0HL1EFADDGMSL [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-27T22:36:02.0942334+05:30 0HL1EFADDGMSL [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-27T22:36:02.0982359+05:30 0HL1EFADDGMSL [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-27T22:36:02.1022385+05:30 0HL1EFADDGMSL [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-27T22:36:02.1322581+05:30 0HL1EFADDGMSL [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 762.079ms (afa2e885)
+2016-12-27T22:36:02.1422641+05:30 0HL1EFADDGMSL [INF] Request finished in 800.0353ms 200 text/html; charset=utf-8 (15c52c40)

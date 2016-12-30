@@ -1,0 +1,21 @@
+﻿@inject CoreDemo.Models.EmpDetails details
+<div class="container">
+    <h2>Details by injecting view</h2>
+        <div class="form-group">
+            <label for="Name">Name:</label>
+           @details.GetDetails().Name 
+        </div>
+        <div class="form-group">
+            <label for="Email">Email:</label>
+          @details.GetDetails().Email 
+
+        </div>
+        <div class="form-group">
+            <label for="Mob">Mobile No.:</label>
+            @details.GetDetails().Mob 
+        </div>
+        <div class="form-group">
+            <label for="Address">Address:</label>
+           @details.GetDetails().Address 
+        </div>
+</div>

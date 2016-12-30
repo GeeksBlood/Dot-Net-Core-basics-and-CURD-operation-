@@ -1,0 +1,1349 @@
+2016-12-30T16:45:55.7777282+05:30 0HL1GKKSNCMJ1 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:45:55.7777282+05:30 0HL1GKKSNCMJ0 [INF] Request starting HTTP/1.1 DEBUG http://localhost:53303/  0 (e5be5b71)
+2016-12-30T16:45:56.1079391+05:30 0HL1GKKSNCMJ0 [INF] Request finished in 357.1465ms 200  (15c52c40)
+2016-12-30T16:45:57.1776240+05:30 0HL1GKKSNCMJ1 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:46:00.2225716+05:30 0HL1GKKSNCMJ1 [INF] Executed DbCommand (401ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:46:13.5360900+05:30 0HL1GKKSNCMJ1 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:46:13.8743053+05:30 0HL1GKKSNCMJ1 [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2016-12-30T16:46:14.8239134+05:30 0HL1GKKSNCMJ1 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 18044.4437ms (afa2e885)
+2016-12-30T16:46:15.2061583+05:30 0HL1GKKSNCMJ1 [INF] Request finished in 19528.5348ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:46:29.4382633+05:30 0HL1GKKSNCMJ2 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Delete/12   (e5be5b71)
+2016-12-30T16:46:29.5753515+05:30 0HL1GKKSNCMJ2 [INF] Executing action method "CoreDemo.Controllers.CurdController.Delete (CoreDemo)" with arguments (["12"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:46:30.8631749+05:30 0HL1GKKSNCMJ2 [INF] Executed DbCommand (115ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T16:46:31.0222780+05:30 0HL1GKKSNCMJ2 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [reg]
+WHERE [id] = @p0;
+SELECT @@ROWCOUNT; (6438bdd5)
+2016-12-30T16:46:31.0653046+05:30 0HL1GKKSNCMJ2 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2016-12-30T16:46:31.0693068+05:30 0HL1GKKSNCMJ2 [INF] Executed action "CoreDemo.Controllers.CurdController.Delete (CoreDemo)" in 1616.7699ms (afa2e885)
+2016-12-30T16:46:31.0753110+05:30 0HL1GKKSNCMJ2 [INF] Request finished in 1637.915ms 302  (15c52c40)
+2016-12-30T16:46:31.0863175+05:30 0HL1GKKSNCMJ3 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:46:31.0893196+05:30 0HL1GKKSNCMJ3 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:46:31.0953235+05:30 0HL1GKKSNCMJ3 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:46:31.1023281+05:30 0HL1GKKSNCMJ3 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:46:31.1273443+05:30 0HL1GKKSNCMJ3 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 20.0957ms (afa2e885)
+2016-12-30T16:46:31.1443550+05:30 0HL1GKKSNCMJ3 [INF] Request finished in 55.317ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:50:02.7110030+05:30 0HL1GKN6AB247 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:50:02.7110030+05:30 0HL1GKN6AB248 [INF] Request starting HTTP/1.1 DEBUG http://localhost:53303/  0 (e5be5b71)
+2016-12-30T16:50:02.8170706+05:30 0HL1GKN6AB248 [INF] Request finished in 183.1634ms 200  (15c52c40)
+2016-12-30T16:50:03.5575407+05:30 0HL1GKN6AB247 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:50:04.9093954+05:30 0HL1GKN6AB247 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:50:07.9293082+05:30 0HL1GKN6AB247 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:50:08.0854071+05:30 0HL1GKN6AB247 [INF] User profile is available. Using '"C:\Users\sumitr2\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2016-12-30T16:50:08.5887265+05:30 0HL1GKN6AB247 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 5226.8214ms (afa2e885)
+2016-12-30T16:50:08.7178084+05:30 0HL1GKN6AB247 [INF] Request finished in 6093.7539ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:51:18.3387743+05:30 0HL1GKN6AB249 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:51:18.3387743+05:30 0HL1GKN6AB24A [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:51:18.3614791+05:30 0HL1GKN6AB24A [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:51:18.3839025+05:30 0HL1GKN6AB249 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:51:18.3939085+05:30 0HL1GKN6AB249 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:51:18.4162759+05:30 0HL1GKN6AB24A [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:51:18.4903250+05:30 0HL1GKN6AB24B [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:51:18.5303429+05:30 0HL1GKN6AB24B [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:51:18.6183983+05:30 0HL1GKN6AB24B [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:51:18.6264034+05:30 0HL1GKN6AB24C [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:51:18.6314071+05:30 0HL1GKN6AB24C [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:51:18.6354089+05:30 0HL1GKN6AB24B [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:51:18.6384124+05:30 0HL1GKN6AB249 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:51:18.6494178+05:30 0HL1GKN6AB24C [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:51:18.6534207+05:30 0HL1GKN6AB24C [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:51:18.6614257+05:30 0HL1GKN6AB24A [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:51:18.7024515+05:30 0HL1GKN6AB24C [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 37.8221ms (afa2e885)
+2016-12-30T16:51:18.7234650+05:30 0HL1GKN6AB24D [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:51:18.7374739+05:30 0HL1GKN6AB24E [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:51:18.7424773+05:30 0HL1GKN6AB24F [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:51:18.7484803+05:30 0HL1GKN6AB24B [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 176.2091ms (afa2e885)
+2016-12-30T16:51:18.7534848+05:30 0HL1GKN6AB24G [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:51:18.7574862+05:30 0HL1GKN6AB24H [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:51:18.7744972+05:30 0HL1GKN6AB24C [INF] Request finished in 107.5792ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:51:18.7915074+05:30 0HL1GKN6AB24E [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:51:18.8035154+05:30 0HL1GKN6AB24F [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:51:18.8085184+05:30 0HL1GKN6AB249 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 325.4543ms (afa2e885)
+2016-12-30T16:51:18.8145229+05:30 0HL1GKN6AB24G [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:51:18.8195259+05:30 0HL1GKN6AB24H [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:51:18.8335340+05:30 0HL1GKN6AB24D [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:51:18.8505454+05:30 0HL1GKN6AB24F [INF] Request finished in 137.7054ms 304 application/javascript (15c52c40)
+2016-12-30T16:51:18.8695572+05:30 0HL1GKN6AB24E [INF] Request finished in 136.1687ms 304 application/javascript (15c52c40)
+2016-12-30T16:51:18.8855674+05:30 0HL1GKN6AB24B [INF] Request finished in 340.4397ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:51:18.9245926+05:30 0HL1GKN6AB249 [INF] Request finished in 604.2141ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:51:18.9355994+05:30 0HL1GKN6AB24A [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 359.3966ms (afa2e885)
+2016-12-30T16:51:18.9446049+05:30 0HL1GKN6AB24D [INF] Request finished in 203.8944ms 304 text/css (15c52c40)
+2016-12-30T16:51:18.9556117+05:30 0HL1GKN6AB24H [INF] Request finished in 176.4374ms 304 application/javascript (15c52c40)
+2016-12-30T16:51:18.9686212+05:30 0HL1GKN6AB24G [INF] Request finished in 170.6638ms 304 text/css (15c52c40)
+2016-12-30T16:51:18.9836298+05:30 0HL1GKN6AB24A [INF] Request finished in 626.8123ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:51:48.5845066+05:30 0HL1GKN6AB24I [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:51:48.5845066+05:30 0HL1GKN6AB24I [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:51:48.5845066+05:30 0HL1GKN6AB24I [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:51:48.6626322+05:30 0HL1GKN6AB24I [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:51:48.6938831+05:30 0HL1GKN6AB24I [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 92.5825ms (afa2e885)
+2016-12-30T16:51:48.7720090+05:30 0HL1GKN6AB24J [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:51:48.8032602+05:30 0HL1GKN6AB24I [INF] Request finished in 125.4893ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:51:48.8032602+05:30 0HL1GKN6AB24J [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:51:48.8032602+05:30 0HL1GKN6AB24K [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:51:48.8188850+05:30 0HL1GKN6AB24K [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:51:48.8188850+05:30 0HL1GKN6AB24L [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:51:48.8188850+05:30 0HL1GKN6AB24M [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:51:48.8345104+05:30 0HL1GKN6AB24N [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:51:48.8345104+05:30 0HL1GKN6AB24N [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:51:48.8345104+05:30 0HL1GKN6AB24L [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:51:48.8501355+05:30 0HL1GKN6AB24M [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:51:48.8501355+05:30 0HL1GKN6AB24L [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:51:48.8657610+05:30 0HL1GKN6AB24M [INF] Request finished in 49.7055ms 304 application/javascript (15c52c40)
+2016-12-30T16:51:48.8657610+05:30 0HL1GKN6AB24K [INF] Request finished in 39.6911ms 304 application/javascript (15c52c40)
+2016-12-30T16:51:48.8657610+05:30 0HL1GKN6AB24O [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:51:48.8657610+05:30 0HL1GKN6AB24O [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:51:48.8813865+05:30 0HL1GKN6AB24J [INF] Request finished in 147.0789ms 304 text/css (15c52c40)
+2016-12-30T16:51:48.8970112+05:30 0HL1GKN6AB24L [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:51:48.8970112+05:30 0HL1GKN6AB24L [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 69.6604ms (afa2e885)
+2016-12-30T16:51:48.9282621+05:30 0HL1GKN6AB24L [INF] Request finished in 120.9211ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:51:48.9438876+05:30 0HL1GKN6AB24P [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:51:48.9438876+05:30 0HL1GKN6AB24Q [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:51:48.9438876+05:30 0HL1GKN6AB24R [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:51:48.9595130+05:30 0HL1GKN6AB24R [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:51:48.9595130+05:30 0HL1GKN6AB24S [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:51:48.9751378+05:30 0HL1GKN6AB24N [INF] Request finished in 189.0782ms 304 text/css (15c52c40)
+2016-12-30T16:51:48.9751378+05:30 0HL1GKN6AB24T [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:51:48.9751378+05:30 0HL1GKN6AB24P [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:51:48.9751378+05:30 0HL1GKN6AB24Q [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:51:48.9907629+05:30 0HL1GKN6AB24P [INF] Request finished in 59.6548ms 304 application/javascript (15c52c40)
+2016-12-30T16:51:49.0063884+05:30 0HL1GKN6AB24R [INF] Request finished in 85.4361ms 304 text/css (15c52c40)
+2016-12-30T16:51:49.0063884+05:30 0HL1GKN6AB24S [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:51:49.0220135+05:30 0HL1GKN6AB24Q [INF] Request finished in 97.0006ms 304 application/javascript (15c52c40)
+2016-12-30T16:51:49.0220135+05:30 0HL1GKN6AB24T [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:51:49.0376393+05:30 0HL1GKN6AB24T [INF] Request finished in 103.016ms 304 application/javascript (15c52c40)
+2016-12-30T16:51:49.0376393+05:30 0HL1GKN6AB24S [INF] Request finished in 117.7936ms 304 text/css (15c52c40)
+2016-12-30T16:51:49.0532647+05:30 0HL1GKN6AB24O [INF] Request finished in 328.2664ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:02.3122681+05:30 0HL1GKN6AB24U [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css.map   (e5be5b71)
+2016-12-30T16:52:02.3212743+05:30 0HL1GKN6AB24U [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"' (27b0a520)
+2016-12-30T16:52:02.6210362+05:30 0HL1GKN6AB24U [INF] Request finished in 302.9637ms 200 text/plain (15c52c40)
+2016-12-30T16:52:55.2094319+05:30 0HL1GKN6AB24V [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:52:55.2124340+05:30 0HL1GKN6AB24V [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:52:55.2163353+05:30 0HL1GKN6AB24V [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:52:55.3052857+05:30 0HL1GKN6AB24V [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:52:55.3503162+05:30 0HL1GKN6AB24V [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 112.5176ms (afa2e885)
+2016-12-30T16:52:55.3913417+05:30 0HL1GKN6AB250 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:52:55.3923421+05:30 0HL1GKN6AB24V [INF] Request finished in 181.8606ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:52:55.4043504+05:30 0HL1GKN6AB250 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:52:55.4073529+05:30 0HL1GKN6AB251 [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:52:55.4153572+05:30 0HL1GKN6AB252 [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:52:55.4233623+05:30 0HL1GKN6AB253 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:52:55.4263637+05:30 0HL1GKN6AB254 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:52:55.4323675+05:30 0HL1GKN6AB254 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:52:55.4343694+05:30 0HL1GKN6AB252 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:52:55.4653886+05:30 0HL1GKN6AB253 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:52:55.4693925+05:30 0HL1GKN6AB250 [INF] Request finished in 53.3401ms 304 text/css (15c52c40)
+2016-12-30T16:52:55.4864024+05:30 0HL1GKN6AB254 [INF] Request finished in 46.7865ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:55.4874022+05:30 0HL1GKN6AB251 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:52:55.4964087+05:30 0HL1GKN6AB251 [INF] Request finished in 104.3151ms 304 text/css (15c52c40)
+2016-12-30T16:52:55.4974085+05:30 0HL1GKN6AB252 [INF] Request finished in 54.4931ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:55.5104173+05:30 0HL1GKN6AB253 [INF] Request finished in 150.8678ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:55.5954717+05:30 0HL1GKN6AB255 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:52:55.5974722+05:30 0HL1GKN6AB255 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:52:55.6044772+05:30 0HL1GKN6AB255 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:52:55.6064785+05:30 0HL1GKN6AB255 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:52:55.6495052+05:30 0HL1GKN6AB255 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 12.0366ms (afa2e885)
+2016-12-30T16:52:55.6565098+05:30 0HL1GKN6AB256 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:52:55.6645149+05:30 0HL1GKN6AB257 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:52:55.6685174+05:30 0HL1GKN6AB258 [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:52:55.6705183+05:30 0HL1GKN6AB259 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:52:55.6785241+05:30 0HL1GKN6AB259 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:52:55.6885304+05:30 0HL1GKN6AB25A [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:52:55.6915325+05:30 0HL1GKN6AB256 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:52:55.6945342+05:30 0HL1GKN6AB257 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:52:55.7055407+05:30 0HL1GKN6AB258 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:52:55.7155474+05:30 0HL1GKN6AB258 [INF] Request finished in 70.6319ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:55.7245529+05:30 0HL1GKN6AB259 [INF] Request finished in 45.6883ms 304 text/css (15c52c40)
+2016-12-30T16:52:55.7365602+05:30 0HL1GKN6AB256 [INF] Request finished in 91.0296ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:55.7425643+05:30 0HL1GKN6AB25A [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:52:55.7485678+05:30 0HL1GKN6AB257 [INF] Request finished in 78.7278ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:55.7515705+05:30 0HL1GKN6AB25A [INF] Request finished in 99.6181ms 304 text/css (15c52c40)
+2016-12-30T16:52:55.7735838+05:30 0HL1GKN6AB255 [INF] Request finished in 71.4239ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:52:58.1523634+05:30 0HL1GKN6AB25B [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:52:58.1553662+05:30 0HL1GKN6AB25B [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:52:58.1583676+05:30 0HL1GKN6AB25B [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:52:58.1603692+05:30 0HL1GKN6AB25B [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:52:58.1723771+05:30 0HL1GKN6AB25B [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 8.4462ms (afa2e885)
+2016-12-30T16:52:58.2083996+05:30 0HL1GKN6AB25B [INF] Request finished in 42.7559ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:52:58.2444224+05:30 0HL1GKN6AB25C [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:52:58.2514270+05:30 0HL1GKN6AB25D [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:52:58.2574305+05:30 0HL1GKN6AB25E [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:52:58.2614327+05:30 0HL1GKN6AB25F [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:52:58.2694385+05:30 0HL1GKN6AB25F [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:52:58.2984567+05:30 0HL1GKN6AB25G [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:52:58.3454859+05:30 0HL1GKN6AB25G [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:52:58.3464864+05:30 0HL1GKN6AB25D [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:52:58.3554923+05:30 0HL1GKN6AB25H [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:52:58.3564934+05:30 0HL1GKN6AB25E [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:52:58.3614964+05:30 0HL1GKN6AB25H [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:52:58.3675006+05:30 0HL1GKN6AB25H [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:52:58.3755046+05:30 0HL1GKN6AB25H [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:52:58.3895145+05:30 0HL1GKN6AB25C [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:52:58.4265378+05:30 0HL1GKN6AB25F [INF] Request finished in 172.0366ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:58.4365441+05:30 0HL1GKN6AB25I [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:52:58.4555556+05:30 0HL1GKN6AB25D [INF] Request finished in 180.9175ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:58.4795712+05:30 0HL1GKN6AB25I [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:52:58.4895779+05:30 0HL1GKN6AB25H [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 22.4963ms (afa2e885)
+2016-12-30T16:52:58.4935804+05:30 0HL1GKN6AB25G [INF] Request finished in 216.8749ms 304 text/css (15c52c40)
+2016-12-30T16:52:58.4995842+05:30 0HL1GKN6AB25E [INF] Request finished in 220.1234ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:58.5065878+05:30 0HL1GKN6AB25J [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:52:58.5135928+05:30 0HL1GKN6AB25K [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:52:58.5155933+05:30 0HL1GKN6AB25L [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:52:58.5235994+05:30 0HL1GKN6AB25L [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:52:58.5276016+05:30 0HL1GKN6AB25J [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:52:58.5346080+05:30 0HL1GKN6AB25C [INF] Request finished in 293.9869ms 304 text/css (15c52c40)
+2016-12-30T16:52:58.5406104+05:30 0HL1GKN6AB25K [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:52:58.5426102+05:30 0HL1GKN6AB25I [INF] Request finished in 99.2858ms 304 text/css (15c52c40)
+2016-12-30T16:52:58.5566198+05:30 0HL1GKN6AB25J [INF] Request finished in 73.5704ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:58.5656254+05:30 0HL1GKN6AB25M [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:52:58.5696275+05:30 0HL1GKN6AB25M [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:52:58.5955064+05:30 0HL1GKN6AB25H [INF] Request finished in 185.0015ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:52:58.6025106+05:30 0HL1GKN6AB25K [INF] Request finished in 96.7168ms 304 application/javascript (15c52c40)
+2016-12-30T16:52:58.6035111+05:30 0HL1GKN6AB25L [INF] Request finished in 81.9908ms 304 text/css (15c52c40)
+2016-12-30T16:52:58.6275266+05:30 0HL1GKN6AB25M [INF] Request finished in 146.1945ms 304 application/javascript (15c52c40)
+2016-12-30T16:53:37.2493044+05:30 0HL1GKN6AB25N [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:53:37.2543077+05:30 0HL1GKN6AB25N [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:53:37.2653142+05:30 0HL1GKN6AB25N [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:53:37.3443634+05:30 0HL1GKN6AB25N [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:53:37.3733826+05:30 0HL1GKN6AB25N [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 111.9149ms (afa2e885)
+2016-12-30T16:53:37.4204271+05:30 0HL1GKN6AB25O [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:53:37.4244303+05:30 0HL1GKN6AB25N [INF] Request finished in 174.321ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:53:37.4274314+05:30 0HL1GKN6AB25O [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:53:37.4354364+05:30 0HL1GKN6AB25P [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T16:53:37.4364369+05:30 0HL1GKN6AB25Q [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:53:37.4624537+05:30 0HL1GKN6AB25O [INF] Request finished in 33.6867ms 304 text/css (15c52c40)
+2016-12-30T16:53:37.4634549+05:30 0HL1GKN6AB25Q [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:53:37.4944744+05:30 0HL1GKN6AB25P [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:53:37.5114853+05:30 0HL1GKN6AB25Q [INF] Request finished in 69.612ms 304 text/css (15c52c40)
+2016-12-30T16:53:37.5164876+05:30 0HL1GKN6AB25P [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T16:53:37.5234926+05:30 0HL1GKN6AB25P [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T16:53:37.5345001+05:30 0HL1GKN6AB25P [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 88.5975ms (afa2e885)
+2016-12-30T16:53:37.5615163+05:30 0HL1GKN6AB25R [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:53:37.5615163+05:30 0HL1GKN6AB25P [INF] Request finished in 130.6156ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:53:37.5705218+05:30 0HL1GKN6AB25S [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:53:37.5755259+05:30 0HL1GKN6AB25T [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:53:37.5775261+05:30 0HL1GKN6AB25S [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:53:37.6035429+05:30 0HL1GKN6AB25T [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:53:37.6105468+05:30 0HL1GKN6AB25T [INF] Request finished in 54.4546ms 304 text/css (15c52c40)
+2016-12-30T16:53:37.6275588+05:30 0HL1GKN6AB25U [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:53:37.6295594+05:30 0HL1GKN6AB25U [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:53:37.6565763+05:30 0HL1GKN6AB25U [INF] Request finished in 7.984ms 304 application/javascript (15c52c40)
+2016-12-30T16:53:37.6605796+05:30 0HL1GKN6AB25R [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:53:37.6615793+05:30 0HL1GKN6AB25S [INF] Request finished in 14.3646ms 304 text/css (15c52c40)
+2016-12-30T16:53:37.6705856+05:30 0HL1GKN6AB25V [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:53:37.6785903+05:30 0HL1GKN6AB25R [INF] Request finished in 121.8724ms 304 application/javascript (15c52c40)
+2016-12-30T16:53:37.7006049+05:30 0HL1GKN6AB25V [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:53:37.7136133+05:30 0HL1GKN6AB25V [INF] Request finished in 53.8667ms 304 application/javascript (15c52c40)
+2016-12-30T16:53:49.8549135+05:30 0HL1GKN6AB260 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T16:53:49.9940166+05:30 0HL1GKN6AB260 [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:53:52.1977499+05:30 0HL1GKN6AB260 [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T16:53:53.0549447+05:30 0HL1GKN6AB260 [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 3086.4522ms (afa2e885)
+2016-12-30T16:53:53.0609485+05:30 0HL1GKN6AB260 [INF] Request finished in 3205.5627ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:58:55.5293187+05:30 0HL1GKN6AB261 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T16:58:55.5293187+05:30 0HL1GKN6AB261 [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:58:55.6386955+05:30 0HL1GKN6AB261 [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T16:58:55.7324469+05:30 0HL1GKN6AB261 [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 145.1158ms (afa2e885)
+2016-12-30T16:58:55.7324469+05:30 0HL1GKN6AB262 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:58:55.7480723+05:30 0HL1GKN6AB261 [INF] Request finished in 227.4429ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:58:55.7480723+05:30 0HL1GKN6AB263 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:58:55.7636974+05:30 0HL1GKN6AB264 [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:58:55.7636974+05:30 0HL1GKN6AB264 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:58:55.7636974+05:30 0HL1GKN6AB265 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:58:55.7793232+05:30 0HL1GKN6AB266 [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:58:55.7793232+05:30 0HL1GKN6AB267 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T16:58:55.7793232+05:30 0HL1GKN6AB267 [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:58:55.7793232+05:30 0HL1GKN6AB263 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:58:55.7949483+05:30 0HL1GKN6AB264 [INF] Request finished in 63.7506ms 304 application/javascript (15c52c40)
+2016-12-30T16:58:55.7949483+05:30 0HL1GKN6AB262 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:58:55.7949483+05:30 0HL1GKN6AB266 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:58:55.8105738+05:30 0HL1GKN6AB265 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:58:55.8105738+05:30 0HL1GKN6AB267 [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T16:58:55.8418244+05:30 0HL1GKN6AB267 [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 37.5839ms (afa2e885)
+2016-12-30T16:58:55.8574495+05:30 0HL1GKN6AB263 [INF] Request finished in 91.6316ms 304 text/css (15c52c40)
+2016-12-30T16:58:55.8730749+05:30 0HL1GKN6AB268 [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:58:55.9043255+05:30 0HL1GKN6AB269 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:58:55.9199509+05:30 0HL1GKN6AB26A [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:58:55.9199509+05:30 0HL1GKN6AB262 [INF] Request finished in 105.758ms 304 application/javascript (15c52c40)
+2016-12-30T16:58:55.9355764+05:30 0HL1GKN6AB268 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:58:55.9355764+05:30 0HL1GKN6AB269 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:58:55.9512015+05:30 0HL1GKN6AB266 [INF] Request finished in 187.8413ms 304 text/css (15c52c40)
+2016-12-30T16:58:55.9512015+05:30 0HL1GKN6AB26B [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:58:55.9512015+05:30 0HL1GKN6AB26C [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:58:55.9668263+05:30 0HL1GKN6AB267 [INF] Request finished in 172.4761ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:58:55.9668263+05:30 0HL1GKN6AB26A [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:58:55.9668263+05:30 0HL1GKN6AB265 [INF] Request finished in 202.935ms 304 application/javascript (15c52c40)
+2016-12-30T16:58:55.9824521+05:30 0HL1GKN6AB26B [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:58:55.9980772+05:30 0HL1GKN6AB268 [INF] Request finished in 130.8665ms 304 text/css (15c52c40)
+2016-12-30T16:58:55.9980772+05:30 0HL1GKN6AB269 [INF] Request finished in 137.8101ms 304 application/javascript (15c52c40)
+2016-12-30T16:58:56.0137026+05:30 0HL1GKN6AB26B [INF] Request finished in 115.1846ms 304 text/css (15c52c40)
+2016-12-30T16:58:56.0293274+05:30 0HL1GKN6AB26A [INF] Request finished in 148.8689ms 304 application/javascript (15c52c40)
+2016-12-30T16:58:56.0293274+05:30 0HL1GKN6AB26C [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:58:56.0605794+05:30 0HL1GKN6AB26C [INF] Request finished in 214.2316ms 304 application/javascript (15c52c40)
+2016-12-30T16:59:22.8735622+05:30 0HL1GKN6AB26D [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T16:59:22.8735622+05:30 0HL1GKN6AB26D [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:59:22.9829390+05:30 0HL1GKN6AB26D [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T16:59:22.9985648+05:30 0HL1GKN6AB26D [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 118.0212ms (afa2e885)
+2016-12-30T16:59:23.0141896+05:30 0HL1GKN6AB26D [INF] Request finished in 144.3421ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T16:59:23.0298151+05:30 0HL1GKN6AB26E [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T16:59:23.0298151+05:30 0HL1GKN6AB26F [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T16:59:23.0298151+05:30 0HL1GKN6AB26F [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T16:59:23.0610660+05:30 0HL1GKN6AB26E [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T16:59:23.0923169+05:30 0HL1GKN6AB26F [INF] Request finished in 65.3265ms 304 application/javascript (15c52c40)
+2016-12-30T16:59:23.0923169+05:30 0HL1GKN6AB26G [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T16:59:23.1391918+05:30 0HL1GKN6AB26G [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T16:59:23.1704417+05:30 0HL1GKN6AB26G [INF] Request finished in 70.2479ms 304 text/css (15c52c40)
+2016-12-30T16:59:23.1704417+05:30 0HL1GKN6AB26H [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T16:59:23.1704417+05:30 0HL1GKN6AB26E [INF] Request finished in 120.8262ms 304 application/javascript (15c52c40)
+2016-12-30T16:59:23.1704417+05:30 0HL1GKN6AB26H [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T16:59:23.1860682+05:30 0HL1GKN6AB26I [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T16:59:23.1860682+05:30 0HL1GKN6AB26H [INF] Request finished in 15.0855ms 304 text/css (15c52c40)
+2016-12-30T16:59:23.2016937+05:30 0HL1GKN6AB26I [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T16:59:23.2173184+05:30 0HL1GKN6AB26I [INF] Request finished in 35.8431ms 304 application/javascript (15c52c40)
+2016-12-30T16:59:47.6708853+05:30 0HL1GKN6AB26J [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/2?IsType=Edit   (e5be5b71)
+2016-12-30T16:59:47.6708853+05:30 0HL1GKN6AB26J [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["2", "Edit"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T16:59:48.5927782+05:30 0HL1GKN6AB26J [INF] Executed DbCommand (53ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T16:59:48.6084026+05:30 0HL1GKN6AB26J [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T16:59:48.6552775+05:30 0HL1GKN6AB26J [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 940.3337ms (afa2e885)
+2016-12-30T16:59:48.7334041+05:30 0HL1GKN6AB26J [INF] Request finished in 1059.8711ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:03:26.9976812+05:30 0HL1GKN6AB26K [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:03:26.9976812+05:30 0HL1GKN6AB26K [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:03:27.0758078+05:30 0HL1GKN6AB26K [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:03:27.0914332+05:30 0HL1GKN6AB26K [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:27.0914332+05:30 0HL1GKN6AB26K [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:27.0914332+05:30 0HL1GKN6AB26K [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:27.0914332+05:30 0HL1GKN6AB26K [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:27.1070583+05:30 0HL1GKN6AB26K [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:27.1226834+05:30 0HL1GKN6AB26K [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 101.681ms (afa2e885)
+2016-12-30T17:03:27.1226834+05:30 0HL1GKN6AB26K [INF] Request finished in 125.4535ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:03:28.7008371+05:30 0HL1GKN6AB26L [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:03:28.7164622+05:30 0HL1GKN6AB26L [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:03:28.8570896+05:30 0HL1GKN6AB26L [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:03:34.6406607+05:30 0HL1GKN6AB26L [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:03:34.7969135+05:30 0HL1GKN6AB26L [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 6070.4174ms (afa2e885)
+2016-12-30T17:03:34.8125383+05:30 0HL1GKN6AB26L [INF] Request finished in 6095.2219ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:03:36.7344488+05:30 0HL1GKN6AB26M [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:03:36.7344488+05:30 0HL1GKN6AB26M [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:03:36.7500732+05:30 0HL1GKN6AB26M [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:03:36.7656987+05:30 0HL1GKN6AB26M [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:03:36.7813245+05:30 0HL1GKN6AB26M [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 24.1784ms (afa2e885)
+2016-12-30T17:03:36.8125751+05:30 0HL1GKN6AB26M [INF] Request finished in 75.4521ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:03:39.4532479+05:30 0HL1GKN6AB26N [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:03:39.4688726+05:30 0HL1GKN6AB26N [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:03:39.4688726+05:30 0HL1GKN6AB26N [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:03:39.4688726+05:30 0HL1GKN6AB26N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:39.4844988+05:30 0HL1GKN6AB26N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:39.4844988+05:30 0HL1GKN6AB26N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:39.4844988+05:30 0HL1GKN6AB26N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:39.4844988+05:30 0HL1GKN6AB26N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:03:39.5001236+05:30 0HL1GKN6AB26N [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 28.6846ms (afa2e885)
+2016-12-30T17:03:39.5469989+05:30 0HL1GKN6AB26N [INF] Request finished in 50.1705ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:03:40.8907738+05:30 0HL1GKN6AB26O [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:03:40.8907738+05:30 0HL1GKN6AB26O [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:03:40.9063986+05:30 0HL1GKN6AB26O [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:03:40.9063986+05:30 0HL1GKN6AB26O [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:03:40.9220237+05:30 0HL1GKN6AB26O [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 10.9795ms (afa2e885)
+2016-12-30T17:03:40.9376495+05:30 0HL1GKN6AB26O [INF] Request finished in 41.3243ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:07:16.7627787+05:30 0HL1GKN6AB26P [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:07:16.7627787+05:30 0HL1GKN6AB26P [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:07:16.7784042+05:30 0HL1GKN6AB26P [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:07:16.7784042+05:30 0HL1GKN6AB26P [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:07:16.7940289+05:30 0HL1GKN6AB26P [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 13.047ms (afa2e885)
+2016-12-30T17:07:16.8096551+05:30 0HL1GKN6AB26P [INF] Request finished in 32.7195ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:07:20.7941018+05:30 0HL1GKN6AB26Q [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:07:20.7941018+05:30 0HL1GKN6AB26Q [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:07:20.7941018+05:30 0HL1GKN6AB26Q [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:07:20.8097269+05:30 0HL1GKN6AB26Q [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:07:20.8409775+05:30 0HL1GKN6AB26Q [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 14.2071ms (afa2e885)
+2016-12-30T17:07:20.8566026+05:30 0HL1GKN6AB26R [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:07:20.9034793+05:30 0HL1GKN6AB26S [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:07:20.9347292+05:30 0HL1GKN6AB26T [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:07:20.9347292+05:30 0HL1GKN6AB26Q [INF] Request finished in 115.7452ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:07:20.9503543+05:30 0HL1GKN6AB26R [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:07:20.9503543+05:30 0HL1GKN6AB26U [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:07:20.9503543+05:30 0HL1GKN6AB26V [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:07:20.9503543+05:30 0HL1GKN6AB26U [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:07:20.9659790+05:30 0HL1GKN6AB26S [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:07:20.9659790+05:30 0HL1GKN6AB26T [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:07:20.9659790+05:30 0HL1GKN6AB26V [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:07:20.9816045+05:30 0HL1GKN6AB26U [INF] Request finished in 76.2077ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:20.9972300+05:30 0HL1GKN6AB26T [INF] Request finished in 99.7675ms 304 text/css (15c52c40)
+2016-12-30T17:07:21.0128558+05:30 0HL1GKN6AB26V [INF] Request finished in 93.1912ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:21.0128558+05:30 0HL1GKN6AB26R [INF] Request finished in 135.2747ms 304 text/css (15c52c40)
+2016-12-30T17:07:21.0284805+05:30 0HL1GKN6AB26S [INF] Request finished in 127.0921ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:21.1847333+05:30 0HL1GKN6AB270 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:07:21.1847333+05:30 0HL1GKN6AB270 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:07:21.2003588+05:30 0HL1GKN6AB270 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:07:21.2003588+05:30 0HL1GKN6AB270 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:07:21.2628603+05:30 0HL1GKN6AB270 [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 13.8454ms (afa2e885)
+2016-12-30T17:07:21.2784854+05:30 0HL1GKN6AB271 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:07:21.2941105+05:30 0HL1GKN6AB271 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:07:21.3097359+05:30 0HL1GKN6AB272 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:07:21.3097359+05:30 0HL1GKN6AB273 [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:07:21.3253611+05:30 0HL1GKN6AB273 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:07:21.3253611+05:30 0HL1GKN6AB274 [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:07:21.3253611+05:30 0HL1GKN6AB275 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:07:21.3409862+05:30 0HL1GKN6AB272 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:07:21.3409862+05:30 0HL1GKN6AB270 [INF] Request finished in 207.9537ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:07:21.3566120+05:30 0HL1GKN6AB275 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:07:21.3566120+05:30 0HL1GKN6AB271 [INF] Request finished in 69.4078ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:21.3566120+05:30 0HL1GKN6AB275 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:07:21.3722367+05:30 0HL1GKN6AB273 [INF] Request finished in 121.2799ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:21.3722367+05:30 0HL1GKN6AB274 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:07:21.3722367+05:30 0HL1GKN6AB272 [INF] Request finished in 109.4241ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:21.3878622+05:30 0HL1GKN6AB275 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:07:21.4191135+05:30 0HL1GKN6AB276 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:07:21.4191135+05:30 0HL1GKN6AB275 [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 53.5107ms (afa2e885)
+2016-12-30T17:07:21.4503633+05:30 0HL1GKN6AB277 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:07:21.4659884+05:30 0HL1GKN6AB274 [INF] Request finished in 228.8942ms 304 text/css (15c52c40)
+2016-12-30T17:07:21.4659884+05:30 0HL1GKN6AB278 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:07:21.4816139+05:30 0HL1GKN6AB279 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:07:21.4972393+05:30 0HL1GKN6AB27A [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:07:21.4972393+05:30 0HL1GKN6AB277 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:07:21.5128644+05:30 0HL1GKN6AB275 [INF] Request finished in 151.5112ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:07:21.5441154+05:30 0HL1GKN6AB279 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:07:21.5441154+05:30 0HL1GKN6AB27B [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:07:21.5597408+05:30 0HL1GKN6AB278 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:07:21.6222423+05:30 0HL1GKN6AB27A [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:07:21.6378670+05:30 0HL1GKN6AB277 [INF] Request finished in 146.869ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:21.6534929+05:30 0HL1GKN6AB278 [INF] Request finished in 217.8857ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:21.6691176+05:30 0HL1GKN6AB279 [INF] Request finished in 191.5509ms 304 text/css (15c52c40)
+2016-12-30T17:07:21.6691176+05:30 0HL1GKN6AB27A [INF] Request finished in 229.7843ms 304 application/javascript (15c52c40)
+2016-12-30T17:07:21.6847431+05:30 0HL1GKN6AB276 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:07:21.6847431+05:30 0HL1GKN6AB27B [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:07:21.6847431+05:30 0HL1GKN6AB27B [INF] Request finished in 252.6161ms 304 text/css (15c52c40)
+2016-12-30T17:07:21.7159936+05:30 0HL1GKN6AB276 [INF] Request finished in 478.4388ms 304 text/css (15c52c40)
+2016-12-30T17:07:51.6574197+05:30 0HL1GKN6AB27C [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:07:51.6574197+05:30 0HL1GKN6AB27C [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:07:51.6730448+05:30 0HL1GKN6AB27C [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:07:51.6730448+05:30 0HL1GKN6AB27C [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:07:51.6886706+05:30 0HL1GKN6AB27C [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 13.247ms (afa2e885)
+2016-12-30T17:07:51.7042946+05:30 0HL1GKN6AB27C [INF] Request finished in 44.3081ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:07:51.7042946+05:30 0HL1GKN6AB27D [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:07:51.7355459+05:30 0HL1GKN6AB27E [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:07:51.7355459+05:30 0HL1GKN6AB27D [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2016-12-30T17:07:51.7355459+05:30 0HL1GKN6AB27E [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\js\site.js"' (27b0a520)
+2016-12-30T17:07:51.7355459+05:30 0HL1GKN6AB27F [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:07:51.7511706+05:30 0HL1GKN6AB27F [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2016-12-30T17:07:51.7667958+05:30 0HL1GKN6AB27G [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:07:51.7667958+05:30 0HL1GKN6AB27E [INF] Request finished in 70.8789ms 200 application/javascript (15c52c40)
+2016-12-30T17:07:51.7667958+05:30 0HL1GKN6AB27H [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:07:51.7824216+05:30 0HL1GKN6AB27H [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2016-12-30T17:07:51.7824216+05:30 0HL1GKN6AB27G [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\.Net Core\CoreDemo\src\CoreDemo\wwwroot\css\site.css"' (27b0a520)
+2016-12-30T17:07:51.8292972+05:30 0HL1GKN6AB27F [INF] Request finished in 132.349ms 200 application/javascript (15c52c40)
+2016-12-30T17:07:51.8449223+05:30 0HL1GKN6AB27G [INF] Request finished in 80.0992ms 200 text/css (15c52c40)
+2016-12-30T17:07:51.9074235+05:30 0HL1GKN6AB27H [INF] Request finished in 120.1563ms 200 text/css (15c52c40)
+2016-12-30T17:07:51.9230493+05:30 0HL1GKN6AB27D [INF] Request finished in 209.0947ms 200 application/javascript (15c52c40)
+2016-12-30T17:07:54.7355997+05:30 0HL1GKN6AB27I [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:07:54.7355997+05:30 0HL1GKN6AB27I [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:07:54.8137263+05:30 0HL1GKN6AB27I [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:07:54.8137263+05:30 0HL1GKN6AB27I [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:07:54.8137263+05:30 0HL1GKN6AB27I [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:07:54.8293514+05:30 0HL1GKN6AB27I [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:07:54.8293514+05:30 0HL1GKN6AB27I [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:07:54.8449768+05:30 0HL1GKN6AB27I [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 96.8584ms (afa2e885)
+2016-12-30T17:07:54.8606019+05:30 0HL1GKN6AB27I [INF] Request finished in 135.8406ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:07:58.5950449+05:30 0HL1GKN6AB27J [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:07:58.5950449+05:30 0HL1GKN6AB27J [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:07:58.6106693+05:30 0HL1GKN6AB27J [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:07:58.6106693+05:30 0HL1GKN6AB27J [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:07:58.6262947+05:30 0HL1GKN6AB27J [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 9.5816ms (afa2e885)
+2016-12-30T17:07:58.6419202+05:30 0HL1GKN6AB27J [INF] Request finished in 44.8117ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:08:04.0638929+05:30 0HL1GKN6AB27K [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:08:04.0638929+05:30 0HL1GKN6AB27K [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:08:04.0795183+05:30 0HL1GKN6AB27K [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:08:04.0795183+05:30 0HL1GKN6AB27K [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:08:04.0795183+05:30 0HL1GKN6AB27K [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:08:04.0795183+05:30 0HL1GKN6AB27K [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:08:04.0951438+05:30 0HL1GKN6AB27K [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:08:04.1107696+05:30 0HL1GKN6AB27K [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 25.2744ms (afa2e885)
+2016-12-30T17:08:04.1263940+05:30 0HL1GKN6AB27K [INF] Request finished in 58.0743ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:10:26.8441346+05:30 0HL1GKN6AB27L [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:10:26.8441346+05:30 0HL1GKN6AB27L [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:10:26.8441346+05:30 0HL1GKN6AB27L [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:10:26.8441346+05:30 0HL1GKN6AB27L [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:10:26.8597600+05:30 0HL1GKN6AB27L [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:10:26.8597600+05:30 0HL1GKN6AB27L [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:10:26.8597600+05:30 0HL1GKN6AB27L [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:10:26.8753855+05:30 0HL1GKN6AB27L [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 26.965ms (afa2e885)
+2016-12-30T17:10:26.9222622+05:30 0HL1GKN6AB27M [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:10:26.9378866+05:30 0HL1GKN6AB27L [INF] Request finished in 57.9529ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:10:26.9691379+05:30 0HL1GKN6AB27N [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:10:27.0003877+05:30 0HL1GKN6AB27O [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:10:27.0003877+05:30 0HL1GKN6AB27M [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:10:27.0003877+05:30 0HL1GKN6AB27P [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:10:27.0160132+05:30 0HL1GKN6AB27Q [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:10:27.0160132+05:30 0HL1GKN6AB27P [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:10:27.0160132+05:30 0HL1GKN6AB27R [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:10:27.0160132+05:30 0HL1GKN6AB27R [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:10:27.0316380+05:30 0HL1GKN6AB27O [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:10:27.0316380+05:30 0HL1GKN6AB27Q [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:10:27.0472634+05:30 0HL1GKN6AB27P [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:10:27.0472634+05:30 0HL1GKN6AB27N [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:10:27.0628889+05:30 0HL1GKN6AB27P [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:10:27.0628889+05:30 0HL1GKN6AB27R [INF] Request finished in 57.9681ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:27.0785143+05:30 0HL1GKN6AB27P [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:10:27.0785143+05:30 0HL1GKN6AB27O [INF] Request finished in 98.3179ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:27.0941394+05:30 0HL1GKN6AB27P [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:10:27.1253900+05:30 0HL1GKN6AB27P [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:10:27.1566406+05:30 0HL1GKN6AB27M [INF] Request finished in 148.2259ms 304 text/css (15c52c40)
+2016-12-30T17:10:27.1878911+05:30 0HL1GKN6AB27P [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 115.5382ms (afa2e885)
+2016-12-30T17:10:27.2035162+05:30 0HL1GKN6AB27Q [INF] Request finished in 110.2123ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:27.2035162+05:30 0HL1GKN6AB27S [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:10:27.2191417+05:30 0HL1GKN6AB27T [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:10:27.2191417+05:30 0HL1GKN6AB27U [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:10:27.2191417+05:30 0HL1GKN6AB27U [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:10:27.2347668+05:30 0HL1GKN6AB27V [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:10:27.2347668+05:30 0HL1GKN6AB27V [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:10:27.2347668+05:30 0HL1GKN6AB27S [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:10:27.2347668+05:30 0HL1GKN6AB27P [INF] Request finished in 210.9346ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:10:27.2503926+05:30 0HL1GKN6AB27T [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:10:27.2503926+05:30 0HL1GKN6AB280 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:10:27.2503926+05:30 0HL1GKN6AB280 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:10:27.2660174+05:30 0HL1GKN6AB280 [INF] Request finished in 69.2131ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:27.2660174+05:30 0HL1GKN6AB27U [INF] Request finished in 62.8559ms 304 text/css (15c52c40)
+2016-12-30T17:10:27.2972683+05:30 0HL1GKN6AB27N [INF] Request finished in 182.7748ms 304 text/css (15c52c40)
+2016-12-30T17:10:27.2972683+05:30 0HL1GKN6AB27S [INF] Request finished in 96.3204ms 304 text/css (15c52c40)
+2016-12-30T17:10:27.3128937+05:30 0HL1GKN6AB27V [INF] Request finished in 136.6475ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:27.3441443+05:30 0HL1GKN6AB27T [INF] Request finished in 133.8336ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:29.7973134+05:30 0HL1GKN6AB281 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:10:29.7973134+05:30 0HL1GKN6AB281 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:10:29.7973134+05:30 0HL1GKN6AB281 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:10:29.8129382+05:30 0HL1GKN6AB281 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:10:30.0629430+05:30 0HL1GKN6AB281 [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 78.2635ms (afa2e885)
+2016-12-30T17:10:30.0785681+05:30 0HL1GKN6AB281 [INF] Request finished in 287.0493ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:10:44.4694530+05:30 0HL1GKN6AB282 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:10:44.4694530+05:30 0HL1GKN6AB282 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:10:44.5319549+05:30 0HL1GKN6AB282 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:10:44.5475807+05:30 0HL1GKN6AB282 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:10:44.5632047+05:30 0HL1GKN6AB282 [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 84.2746ms (afa2e885)
+2016-12-30T17:10:44.5944560+05:30 0HL1GKN6AB282 [INF] Request finished in 102.3248ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:10:44.6882095+05:30 0HL1GKN6AB283 [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:10:44.6882095+05:30 0HL1GKN6AB284 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:10:44.6882095+05:30 0HL1GKN6AB284 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:10:44.7038324+05:30 0HL1GKN6AB285 [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:10:44.7038324+05:30 0HL1GKN6AB286 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:10:44.7194575+05:30 0HL1GKN6AB286 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:10:44.7194575+05:30 0HL1GKN6AB287 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:10:44.7194575+05:30 0HL1GKN6AB287 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:10:44.7350826+05:30 0HL1GKN6AB283 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:10:44.7507085+05:30 0HL1GKN6AB285 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:10:44.7819587+05:30 0HL1GKN6AB284 [INF] Request finished in 21.6196ms 304 text/css (15c52c40)
+2016-12-30T17:10:44.8288343+05:30 0HL1GKN6AB286 [INF] Request finished in 142.0906ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:44.8600853+05:30 0HL1GKN6AB285 [INF] Request finished in 150.7294ms 304 text/css (15c52c40)
+2016-12-30T17:10:44.8600853+05:30 0HL1GKN6AB287 [INF] Request finished in 140.1314ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:44.8757107+05:30 0HL1GKN6AB283 [INF] Request finished in 125.9416ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:53.4852406+05:30 0HL1GKN6AB288 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:10:53.5008660+05:30 0HL1GKN6AB288 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:10:53.5477428+05:30 0HL1GKN6AB288 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:10:53.5633679+05:30 0HL1GKN6AB288 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:10:53.5789933+05:30 0HL1GKN6AB288 [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 72.5823ms (afa2e885)
+2016-12-30T17:10:53.5946177+05:30 0HL1GKN6AB289 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:10:53.6102432+05:30 0HL1GKN6AB288 [INF] Request finished in 106.325ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:10:53.6258683+05:30 0HL1GKN6AB289 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:10:53.6258683+05:30 0HL1GKN6AB28A [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:10:53.6258683+05:30 0HL1GKN6AB28B [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:10:53.6258683+05:30 0HL1GKN6AB28C [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:10:53.6258683+05:30 0HL1GKN6AB28C [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:10:53.6414937+05:30 0HL1GKN6AB28B [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:10:53.6414937+05:30 0HL1GKN6AB28A [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:10:53.6571192+05:30 0HL1GKN6AB28D [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:10:53.6571192+05:30 0HL1GKN6AB28D [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:10:53.6883694+05:30 0HL1GKN6AB289 [INF] Request finished in 50.8603ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:53.6883694+05:30 0HL1GKN6AB28C [INF] Request finished in 98.7341ms 304 text/css (15c52c40)
+2016-12-30T17:10:53.7039945+05:30 0HL1GKN6AB28E [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:10:53.7039945+05:30 0HL1GKN6AB28B [INF] Request finished in 58.149ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:53.7196200+05:30 0HL1GKN6AB28A [INF] Request finished in 117.043ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:53.7196200+05:30 0HL1GKN6AB28D [INF] Request finished in 94.9027ms 304 text/css (15c52c40)
+2016-12-30T17:10:53.7196200+05:30 0HL1GKN6AB28E [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:10:53.7196200+05:30 0HL1GKN6AB28E [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:10:53.7352451+05:30 0HL1GKN6AB28E [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:10:53.7508702+05:30 0HL1GKN6AB28E [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 33.0447ms (afa2e885)
+2016-12-30T17:10:53.7821211+05:30 0HL1GKN6AB28E [INF] Request finished in 89.2898ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:10:53.7821211+05:30 0HL1GKN6AB28F [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:10:53.7977466+05:30 0HL1GKN6AB28G [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:10:53.7977466+05:30 0HL1GKN6AB28H [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:10:53.7977466+05:30 0HL1GKN6AB28H [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:10:53.8133720+05:30 0HL1GKN6AB28I [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:10:53.8133720+05:30 0HL1GKN6AB28G [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:10:53.8133720+05:30 0HL1GKN6AB28F [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:10:53.8446222+05:30 0HL1GKN6AB28F [INF] Request finished in 68.9367ms 304 text/css (15c52c40)
+2016-12-30T17:10:53.8446222+05:30 0HL1GKN6AB28J [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:10:53.8602473+05:30 0HL1GKN6AB28J [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:10:53.9383746+05:30 0HL1GKN6AB28G [INF] Request finished in 104.4245ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:53.9383746+05:30 0HL1GKN6AB28I [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:10:53.9383746+05:30 0HL1GKN6AB28H [INF] Request finished in 48.9818ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:53.9539994+05:30 0HL1GKN6AB28I [INF] Request finished in 189.1889ms 304 text/css (15c52c40)
+2016-12-30T17:10:53.9539994+05:30 0HL1GKN6AB28J [INF] Request finished in 138.909ms 304 application/javascript (15c52c40)
+2016-12-30T17:10:58.7822117+05:30 0HL1GKN6AB28K [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:10:58.7822117+05:30 0HL1GKN6AB28K [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:10:58.7822117+05:30 0HL1GKN6AB28K [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:10:58.7978365+05:30 0HL1GKN6AB28K [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:10:58.7978365+05:30 0HL1GKN6AB28K [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 9.0461ms (afa2e885)
+2016-12-30T17:10:58.8603379+05:30 0HL1GKN6AB28K [INF] Request finished in 67.6297ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:11:00.3916159+05:30 0HL1GKN6AB28L [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:11:00.3916159+05:30 0HL1GKN6AB28L [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:11:00.3916159+05:30 0HL1GKN6AB28L [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:11:00.4072407+05:30 0HL1GKN6AB28L [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:00.4072407+05:30 0HL1GKN6AB28L [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:00.4072407+05:30 0HL1GKN6AB28L [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:00.4072407+05:30 0HL1GKN6AB28L [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:00.4228665+05:30 0HL1GKN6AB28L [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 20.53ms (afa2e885)
+2016-12-30T17:11:00.5009924+05:30 0HL1GKN6AB28L [INF] Request finished in 108.6455ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:11:01.9853943+05:30 0HL1GKN6AB28M [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home   (e5be5b71)
+2016-12-30T17:11:01.9853943+05:30 0HL1GKN6AB28M [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:11:01.9853943+05:30 0HL1GKN6AB28M [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:02.0635216+05:30 0HL1GKN6AB28M [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-30T17:11:02.0947711+05:30 0HL1GKN6AB28M [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 94.7095ms (afa2e885)
+2016-12-30T17:11:02.1572723+05:30 0HL1GKN6AB28M [INF] Request finished in 142.4852ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:11:03.2822929+05:30 0HL1GKN6AB28N [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:11:03.2979184+05:30 0HL1GKN6AB28N [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:11:03.2979184+05:30 0HL1GKN6AB28N [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:11:03.2979184+05:30 0HL1GKN6AB28N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:03.2979184+05:30 0HL1GKN6AB28N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:03.2979184+05:30 0HL1GKN6AB28N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:03.3135431+05:30 0HL1GKN6AB28N [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:03.3291686+05:30 0HL1GKN6AB28N [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 21.8189ms (afa2e885)
+2016-12-30T17:11:03.3916694+05:30 0HL1GKN6AB28N [INF] Request finished in 101.0645ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:11:06.0010920+05:30 0HL1GKN6AB28O [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home   (e5be5b71)
+2016-12-30T17:11:06.0010920+05:30 0HL1GKN6AB28O [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:11:06.0010920+05:30 0HL1GKN6AB28O [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:06.0010920+05:30 0HL1GKN6AB28O [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-30T17:11:06.0479673+05:30 0HL1GKN6AB28O [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 7.8315ms (afa2e885)
+2016-12-30T17:11:06.1104684+05:30 0HL1GKN6AB28O [INF] Request finished in 94.9827ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:11:06.8917332+05:30 0HL1GKN6AB28P [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:11:06.8917332+05:30 0HL1GKN6AB28P [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:11:06.9073580+05:30 0HL1GKN6AB28P [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:11:06.9073580+05:30 0HL1GKN6AB28P [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:11:06.9229831+05:30 0HL1GKN6AB28P [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 10.5867ms (afa2e885)
+2016-12-30T17:11:06.9854842+05:30 0HL1GKN6AB28P [INF] Request finished in 84.357ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:11:07.6261217+05:30 0HL1GKN6AB28Q [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home   (e5be5b71)
+2016-12-30T17:11:07.6261217+05:30 0HL1GKN6AB28Q [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:11:07.6417461+05:30 0HL1GKN6AB28Q [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:11:07.6417461+05:30 0HL1GKN6AB28Q [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-30T17:11:07.6573719+05:30 0HL1GKN6AB28Q [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 19.1189ms (afa2e885)
+2016-12-30T17:11:07.7198730+05:30 0HL1GKN6AB28Q [INF] Request finished in 44.4776ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:34.0133512+05:30 0HL1GKN6AB28R [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home   (e5be5b71)
+2016-12-30T17:12:34.0133512+05:30 0HL1GKN6AB28R [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:34.0446021+05:30 0HL1GKN6AB28R [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:34.0446021+05:30 0HL1GKN6AB28R [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-30T17:12:34.2008564+05:30 0HL1GKN6AB28S [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home   (e5be5b71)
+2016-12-30T17:12:34.2008564+05:30 0HL1GKN6AB28S [INF] Executing action method "CoreDemo.Controllers.HomeController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:34.2321048+05:30 0HL1GKN6AB28S [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:34.2321048+05:30 0HL1GKN6AB28S [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2016-12-30T17:12:34.2946063+05:30 0HL1GKN6AB28S [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 89.7845ms (afa2e885)
+2016-12-30T17:12:34.3258569+05:30 0HL1GKN6AB28S [INF] Request finished in 147.5839ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:34.3414823+05:30 0HL1GKN6AB28T [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:12:34.3414823+05:30 0HL1GKN6AB28T [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:12:34.3571074+05:30 0HL1GKN6AB28U [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:12:34.4039831+05:30 0HL1GKN6AB28T [INF] Request finished in 25.2964ms 304 application/javascript (15c52c40)
+2016-12-30T17:12:34.4039831+05:30 0HL1GKN6AB28V [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:12:34.4196086+05:30 0HL1GKN6AB28V [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:12:34.4352340+05:30 0HL1GKN6AB290 [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:12:34.4352340+05:30 0HL1GKN6AB28U [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:12:34.4352340+05:30 0HL1GKN6AB28R [INF] Executed action "CoreDemo.Controllers.HomeController.Index (CoreDemo)" in 266.6916ms (afa2e885)
+2016-12-30T17:12:34.4508591+05:30 0HL1GKN6AB290 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:12:34.4508591+05:30 0HL1GKN6AB28R [INF] Request finished in 429.4142ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:34.4508591+05:30 0HL1GKN6AB291 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:12:34.4821100+05:30 0HL1GKN6AB28V [INF] Request finished in 107.1503ms 304 application/javascript (15c52c40)
+2016-12-30T17:12:34.4821100+05:30 0HL1GKN6AB28U [INF] Request finished in 150.7881ms 304 application/javascript (15c52c40)
+2016-12-30T17:12:34.4821100+05:30 0HL1GKN6AB290 [INF] Request finished in 142.4509ms 304 text/css (15c52c40)
+2016-12-30T17:12:34.4821100+05:30 0HL1GKN6AB291 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:12:34.4977348+05:30  [INF] Connection id ""0HL1GKN67UN8J"" communication error (46f6d175)
+Microsoft.AspNetCore.Server.Kestrel.Internal.Networking.UvException: Error -4077 ECONNRESET connection reset by peer
+2016-12-30T17:12:34.4977348+05:30 0HL1GKN6AB291 [INF] Request finished in 99.0766ms 304 text/css (15c52c40)
+2016-12-30T17:12:34.5133599+05:30 0HL1GKN6AB292 [INF] Request starting HTTP/1.1 GET http://localhost:53303/images/banner1.svg   (e5be5b71)
+2016-12-30T17:12:34.5289853+05:30 0HL1GKN6AB292 [INF] The file "/images/banner1.svg" was not modified (f1f8d725)
+2016-12-30T17:12:34.5289853+05:30 0HL1GKN6AB293 [INF] Request starting HTTP/1.1 GET http://localhost:53303/images/banner3.svg   (e5be5b71)
+2016-12-30T17:12:34.5602363+05:30 0HL1GKN6AB293 [INF] The file "/images/banner3.svg" was not modified (f1f8d725)
+2016-12-30T17:12:34.5914872+05:30 0HL1GKN6AB293 [INF] Request finished in 60.6645ms 304 image/svg+xml (15c52c40)
+2016-12-30T17:12:34.5914872+05:30 0HL1GKN6AB294 [INF] Request starting HTTP/1.1 GET http://localhost:53303/images/banner2.svg   (e5be5b71)
+2016-12-30T17:12:34.6071119+05:30 0HL1GKN6AB294 [INF] The file "/images/banner2.svg" was not modified (f1f8d725)
+2016-12-30T17:12:34.6071119+05:30 0HL1GKN6AB292 [INF] Request finished in 82.9195ms 304 image/svg+xml (15c52c40)
+2016-12-30T17:12:34.6071119+05:30 0HL1GKN6AB294 [INF] Request finished in 84.9113ms 304 image/svg+xml (15c52c40)
+2016-12-30T17:12:34.6227374+05:30 0HL1GKN6AB295 [INF] Request starting HTTP/1.1 GET http://localhost:53303/images/banner4.svg   (e5be5b71)
+2016-12-30T17:12:34.6227374+05:30 0HL1GKN6AB295 [INF] The file "/images/banner4.svg" was not modified (f1f8d725)
+2016-12-30T17:12:34.6227374+05:30 0HL1GKN6AB295 [INF] Request finished in 98.7022ms 304 image/svg+xml (15c52c40)
+2016-12-30T17:12:37.4352874+05:30 0HL1GKN6AB296 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:12:37.4352874+05:30 0HL1GKN6AB296 [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:37.4352874+05:30 0HL1GKN6AB296 [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:12:37.4509133+05:30 0HL1GKN6AB296 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:37.4509133+05:30 0HL1GKN6AB296 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:37.4665387+05:30 0HL1GKN6AB296 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:37.4665387+05:30 0HL1GKN6AB296 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:37.4821642+05:30 0HL1GKN6AB296 [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 28.5073ms (afa2e885)
+2016-12-30T17:12:37.4977893+05:30 0HL1GKN6AB296 [INF] Request finished in 56.1278ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:38.6228096+05:30 0HL1GKN6AB297 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:12:38.6228096+05:30 0HL1GKN6AB297 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:38.6228096+05:30 0HL1GKN6AB297 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:12:38.6384350+05:30 0HL1GKN6AB297 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:12:38.6540594+05:30 0HL1GKN6AB297 [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 12.4846ms (afa2e885)
+2016-12-30T17:12:38.7009362+05:30 0HL1GKN6AB297 [INF] Request finished in 87.8639ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:39.5915767+05:30 0HL1GKN6AB298 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:12:39.5915767+05:30 0HL1GKN6AB298 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:39.5915767+05:30 0HL1GKN6AB298 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:39.5915767+05:30 0HL1GKN6AB298 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:12:39.6697030+05:30 0HL1GKN6AB298 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 15.639ms (afa2e885)
+2016-12-30T17:12:39.6853284+05:30 0HL1GKN6AB298 [INF] Request finished in 106.3285ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:41.4353607+05:30 0HL1GKN6AB299 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:12:41.4353607+05:30 0HL1GKN6AB299 [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:41.4353607+05:30 0HL1GKN6AB299 [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:12:41.4353607+05:30 0HL1GKN6AB299 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:41.4509855+05:30 0HL1GKN6AB299 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:41.4509855+05:30 0HL1GKN6AB299 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:41.4509855+05:30 0HL1GKN6AB299 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:41.4822360+05:30 0HL1GKN6AB299 [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 19.7383ms (afa2e885)
+2016-12-30T17:12:41.5447375+05:30 0HL1GKN6AB299 [INF] Request finished in 105.9396ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:42.2166245+05:30 0HL1GKN6AB29A [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:12:42.2322499+05:30 0HL1GKN6AB29A [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:42.2322499+05:30 0HL1GKN6AB29A [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:42.2322499+05:30 0HL1GKN6AB29A [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:12:42.2478747+05:30 0HL1GKN6AB29A [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 10.2133ms (afa2e885)
+2016-12-30T17:12:42.3103758+05:30 0HL1GKN6AB29A [INF] Request finished in 29.3677ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:43.2010174+05:30 0HL1GKN6AB29B [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:12:43.2010174+05:30 0HL1GKN6AB29B [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:43.2010174+05:30 0HL1GKN6AB29B [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:12:43.2010174+05:30 0HL1GKN6AB29B [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:43.2010174+05:30 0HL1GKN6AB29B [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:43.2166421+05:30 0HL1GKN6AB29B [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:43.2166421+05:30 0HL1GKN6AB29B [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:43.2166421+05:30 0HL1GKN6AB29B [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 17.7483ms (afa2e885)
+2016-12-30T17:12:43.2478934+05:30 0HL1GKN6AB29B [INF] Request finished in 41.6921ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:43.9197807+05:30 0HL1GKN6AB29C [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:12:43.9354051+05:30 0HL1GKN6AB29C [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:43.9354051+05:30 0HL1GKN6AB29C [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:43.9354051+05:30 0HL1GKN6AB29C [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:12:43.9510302+05:30 0HL1GKN6AB29C [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 12.4666ms (afa2e885)
+2016-12-30T17:12:44.0135317+05:30 0HL1GKN6AB29C [INF] Request finished in 89.4943ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:47.1385885+05:30 0HL1GKN6AB29D [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T17:12:47.1385885+05:30 0HL1GKN6AB29D [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:47.1542132+05:30 0HL1GKN6AB29D [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T17:12:47.2323398+05:30 0HL1GKN6AB29D [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 8.2243ms (afa2e885)
+2016-12-30T17:12:47.2323398+05:30 0HL1GKN6AB29D [INF] Request finished in 94.1903ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:49.3261276+05:30 0HL1GKN6AB29E [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:12:49.3261276+05:30 0HL1GKN6AB29E [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:49.3417530+05:30 0HL1GKN6AB29E [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:12:49.3417530+05:30 0HL1GKN6AB29E [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:49.3417530+05:30 0HL1GKN6AB29E [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:49.3417530+05:30 0HL1GKN6AB29E [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:49.3573782+05:30 0HL1GKN6AB29E [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:49.4667553+05:30 0HL1GKN6AB29E [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 26.3995ms (afa2e885)
+2016-12-30T17:12:49.4823804+05:30 0HL1GKN6AB29E [INF] Request finished in 150.5847ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:50.4198970+05:30 0HL1GKN6AB29F [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:12:50.4198970+05:30 0HL1GKN6AB29F [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:50.4355224+05:30 0HL1GKN6AB29F [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:12:50.4355224+05:30 0HL1GKN6AB29F [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:12:50.5292738+05:30 0HL1GKN6AB29F [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 12.244ms (afa2e885)
+2016-12-30T17:12:50.5292738+05:30 0HL1GKN6AB29F [INF] Request finished in 116.1699ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:51.4980416+05:30 0HL1GKN6AB29G [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:12:51.4980416+05:30 0HL1GKN6AB29G [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:51.5136667+05:30 0HL1GKN6AB29G [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:12:51.5136667+05:30 0HL1GKN6AB29G [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:51.5136667+05:30 0HL1GKN6AB29G [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:51.5292925+05:30 0HL1GKN6AB29G [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:51.5292925+05:30 0HL1GKN6AB29G [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:51.5449176+05:30 0HL1GKN6AB29G [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 23.7056ms (afa2e885)
+2016-12-30T17:12:51.6386693+05:30 0HL1GKN6AB29G [INF] Request finished in 113.0991ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:12:52.0918023+05:30 0HL1GKN6AB29H [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:12:52.0918023+05:30 0HL1GKN6AB29H [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:12:52.0918023+05:30 0HL1GKN6AB29H [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:12:52.0918023+05:30 0HL1GKN6AB29H [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:12:52.1230532+05:30 0HL1GKN6AB29H [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 12.0635ms (afa2e885)
+2016-12-30T17:12:52.2636806+05:30 0HL1GKN6AB29H [INF] Request finished in 166.957ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:12.4581224+05:30 0HL1GKN6AB29I [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:13:12.4737447+05:30 0HL1GKN6AB29I [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:12.4737447+05:30 0HL1GKN6AB29I [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:13:12.4737447+05:30 0HL1GKN6AB29I [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:13:12.5049960+05:30 0HL1GKN6AB29I [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 11.3345ms (afa2e885)
+2016-12-30T17:13:12.5049960+05:30 0HL1GKN6AB29J [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:13:12.5206211+05:30 0HL1GKN6AB29K [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:13:12.5206211+05:30 0HL1GKN6AB29L [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:13:12.5206211+05:30 0HL1GKN6AB29K [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:13:12.5362462+05:30 0HL1GKN6AB29M [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:13:12.5362462+05:30 0HL1GKN6AB29N [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:13:12.5362462+05:30 0HL1GKN6AB29L [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:13:12.5362462+05:30 0HL1GKN6AB29M [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:13:12.5518713+05:30 0HL1GKN6AB29J [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:13:12.5831218+05:30 0HL1GKN6AB29J [INF] Request finished in 50.9116ms 304 text/css (15c52c40)
+2016-12-30T17:13:12.5831218+05:30 0HL1GKN6AB29N [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:13:12.5987473+05:30 0HL1GKN6AB29M [INF] Request finished in 85.3855ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:12.5987473+05:30 0HL1GKN6AB29O [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:13:12.6143724+05:30 0HL1GKN6AB29K [INF] Request finished in 56.2899ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:12.6143724+05:30 0HL1GKN6AB29L [INF] Request finished in 83.7639ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:12.6143724+05:30 0HL1GKN6AB29O [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:12.6299979+05:30 0HL1GKN6AB29O [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:13:12.6299979+05:30 0HL1GKN6AB29N [INF] Request finished in 123.3963ms 304 text/css (15c52c40)
+2016-12-30T17:13:12.6299979+05:30 0HL1GKN6AB29I [INF] Request finished in 126.0976ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:12.6456230+05:30 0HL1GKN6AB29O [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:13:12.6924997+05:30 0HL1GKN6AB29O [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 36.4932ms (afa2e885)
+2016-12-30T17:13:12.7081241+05:30 0HL1GKN6AB29O [INF] Request finished in 127.8042ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:12.7237496+05:30 0HL1GKN6AB29P [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:13:12.7550001+05:30 0HL1GKN6AB29Q [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:13:12.7550001+05:30 0HL1GKN6AB29R [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:13:12.7550001+05:30 0HL1GKN6AB29R [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:13:12.7706252+05:30 0HL1GKN6AB29S [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:13:12.7706252+05:30 0HL1GKN6AB29T [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:13:12.7706252+05:30 0HL1GKN6AB29U [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:13:12.7706252+05:30 0HL1GKN6AB29P [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:13:12.7862507+05:30 0HL1GKN6AB29Q [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:13:12.7862507+05:30 0HL1GKN6AB29S [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:12.8018758+05:30 0HL1GKN6AB29P [INF] Request finished in 85.395ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:12.8018758+05:30 0HL1GKN6AB29R [INF] Request finished in 108.1663ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:12.8175013+05:30 0HL1GKN6AB29S [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:13:12.8487522+05:30 0HL1GKN6AB29U [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:13:12.8487522+05:30 0HL1GKN6AB29T [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:13:12.8487522+05:30 0HL1GKN6AB29S [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:13:12.9268777+05:30 0HL1GKN6AB29U [INF] Request finished in 205.9293ms 304 text/css (15c52c40)
+2016-12-30T17:13:12.9425035+05:30 0HL1GKN6AB29V [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:13:12.9581286+05:30 0HL1GKN6AB29S [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 88.9734ms (afa2e885)
+2016-12-30T17:13:12.9581286+05:30 0HL1GKN6AB29Q [INF] Request finished in 153.8034ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:12.9581286+05:30 0HL1GKN6AB2A0 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:13:12.9581286+05:30 0HL1GKN6AB2A1 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:13:12.9737537+05:30 0HL1GKN6AB2A2 [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:13:12.9893788+05:30 0HL1GKN6AB2A2 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:13:12.9893788+05:30 0HL1GKN6AB2A0 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:13:13.0050046+05:30 0HL1GKN6AB2A1 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:13:13.0050046+05:30 0HL1GKN6AB29V [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:13:13.0050046+05:30 0HL1GKN6AB29T [INF] Request finished in 292.5362ms 304 text/css (15c52c40)
+2016-12-30T17:13:13.0050046+05:30 0HL1GKN6AB29S [INF] Request finished in 230.5572ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:13.0206297+05:30 0HL1GKN6AB29V [INF] Request finished in 75.6198ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:13.0362552+05:30 0HL1GKN6AB2A0 [INF] Request finished in 110.9222ms 304 text/css (15c52c40)
+2016-12-30T17:13:13.0518803+05:30 0HL1GKN6AB2A1 [INF] Request finished in 81.804ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:13.0518803+05:30 0HL1GKN6AB2A3 [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:13:13.0518803+05:30 0HL1GKN6AB2A3 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:13:13.0675058+05:30 0HL1GKN6AB2A2 [INF] Request finished in 114.3724ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:13.0675058+05:30 0HL1GKN6AB2A3 [INF] Request finished in 183.8775ms 304 text/css (15c52c40)
+2016-12-30T17:13:14.9112894+05:30 0HL1GKN6AB2A4 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T17:13:14.9112894+05:30 0HL1GKN6AB2A4 [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:15.0050414+05:30 0HL1GKN6AB2A4 [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T17:13:15.0362917+05:30 0HL1GKN6AB2A4 [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 108.4229ms (afa2e885)
+2016-12-30T17:13:15.0831666+05:30 0HL1GKN6AB2A4 [INF] Request finished in 163.8932ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:32.8803637+05:30 0HL1GKN6AB2A5 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T17:13:32.8959888+05:30 0HL1GKN6AB2A5 [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:32.9741147+05:30 0HL1GKN6AB2A5 [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T17:13:33.0053656+05:30 0HL1GKN6AB2A5 [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 111.1278ms (afa2e885)
+2016-12-30T17:13:33.0366162+05:30 0HL1GKN6AB2A5 [INF] Request finished in 145.4874ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:33.0366162+05:30 0HL1GKN6AB2A6 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:13:33.0678674+05:30 0HL1GKN6AB2A6 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:13:33.0678674+05:30 0HL1GKN6AB2A6 [INF] Request finished in 32.3514ms 304 text/css (15c52c40)
+2016-12-30T17:13:33.0834922+05:30 0HL1GKN6AB2A7 [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:13:33.0834922+05:30 0HL1GKN6AB2A8 [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:13:33.0834922+05:30 0HL1GKN6AB2A7 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:13:33.0834922+05:30 0HL1GKN6AB2A8 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:13:33.1303686+05:30 0HL1GKN6AB2A7 [INF] Request finished in 49.9278ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:33.1303686+05:30 0HL1GKN6AB2A9 [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:13:33.1459926+05:30 0HL1GKN6AB2A9 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:13:33.1459926+05:30 0HL1GKN6AB2A8 [INF] Request finished in 111.7181ms 304 text/css (15c52c40)
+2016-12-30T17:13:33.1459926+05:30 0HL1GKN6AB2AA [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:13:33.1616181+05:30 0HL1GKN6AB2A9 [INF] Request finished in 20.2851ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:33.1616181+05:30 0HL1GKN6AB2AB [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T17:13:33.1616181+05:30 0HL1GKN6AB2AA [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:13:33.1928686+05:30 0HL1GKN6AB2AB [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:33.2084941+05:30 0HL1GKN6AB2AA [INF] Request finished in 53.5716ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:33.2084941+05:30 0HL1GKN6AB2AB [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T17:13:33.2553701+05:30 0HL1GKN6AB2AB [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 44.117ms (afa2e885)
+2016-12-30T17:13:33.2709963+05:30 0HL1GKN6AB2AB [INF] Request finished in 108.2272ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:33.2709963+05:30 0HL1GKN6AB2AC [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:13:33.2709963+05:30 0HL1GKN6AB2AD [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:13:33.2866203+05:30 0HL1GKN6AB2AC [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:13:33.3178713+05:30 0HL1GKN6AB2AD [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:13:33.3491222+05:30 0HL1GKN6AB2AD [INF] Request finished in 90.9722ms 304 text/css (15c52c40)
+2016-12-30T17:13:33.3491222+05:30 0HL1GKN6AB2AE [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:13:33.3647466+05:30 0HL1GKN6AB2AC [INF] Request finished in 48.4686ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:33.3647466+05:30 0HL1GKN6AB2AE [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:13:33.3959975+05:30 0HL1GKN6AB2AF [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:13:33.3959975+05:30 0HL1GKN6AB2AF [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:13:33.3959975+05:30 0HL1GKN6AB2AF [INF] Request finished in 34.1914ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:33.4272480+05:30 0HL1GKN6AB2AG [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:13:33.4272480+05:30 0HL1GKN6AB2AE [INF] Request finished in 16.1415ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:33.4272480+05:30 0HL1GKN6AB2AG [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:13:33.4584990+05:30 0HL1GKN6AB2AG [INF] Request finished in 18.059ms 304 text/css (15c52c40)
+2016-12-30T17:13:34.0835102+05:30 0HL1GKN6AB2AH [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:13:34.0835102+05:30 0HL1GKN6AB2AH [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:34.0835102+05:30 0HL1GKN6AB2AH [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:13:34.0835102+05:30 0HL1GKN6AB2AH [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:13:34.1616368+05:30 0HL1GKN6AB2AH [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 11.6385ms (afa2e885)
+2016-12-30T17:13:34.1616368+05:30 0HL1GKN6AB2AH [INF] Request finished in 83.9568ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:35.2085302+05:30 0HL1GKN6AB2AI [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:13:35.2085302+05:30 0HL1GKN6AB2AI [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:35.2085302+05:30 0HL1GKN6AB2AI [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:13:35.2085302+05:30 0HL1GKN6AB2AI [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:13:35.2397808+05:30 0HL1GKN6AB2AI [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 12.296ms (afa2e885)
+2016-12-30T17:13:35.2710313+05:30 0HL1GKN6AB2AI [INF] Request finished in 56.1445ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:35.2710313+05:30 0HL1GKN6AB2AJ [INF] Request starting HTTP/1.1 GET http://localhost:53303/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo   (e5be5b71)
+2016-12-30T17:13:35.2866564+05:30 0HL1GKN6AB2AK [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/js/bootstrap.js   (e5be5b71)
+2016-12-30T17:13:35.2866564+05:30 0HL1GKN6AB2AL [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/bootstrap/dist/css/bootstrap.css   (e5be5b71)
+2016-12-30T17:13:35.2866564+05:30 0HL1GKN6AB2AM [INF] Request starting HTTP/1.1 GET http://localhost:53303/lib/jquery/dist/jquery.js   (e5be5b71)
+2016-12-30T17:13:35.3022819+05:30 0HL1GKN6AB2AM [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2016-12-30T17:13:35.3022819+05:30 0HL1GKN6AB2AJ [INF] The file "/js/site.js" was not modified (f1f8d725)
+2016-12-30T17:13:35.3022819+05:30 0HL1GKN6AB2AK [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2016-12-30T17:13:35.3179070+05:30 0HL1GKN6AB2AN [INF] Request starting HTTP/1.1 GET http://localhost:53303/css/site.css   (e5be5b71)
+2016-12-30T17:13:35.3335325+05:30 0HL1GKN6AB2AN [INF] The file "/css/site.css" was not modified (f1f8d725)
+2016-12-30T17:13:35.3335325+05:30 0HL1GKN6AB2AL [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2016-12-30T17:13:35.3647862+05:30 0HL1GKN6AB2AK [INF] Request finished in 116.0142ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:35.3804085+05:30 0HL1GKN6AB2AJ [INF] Request finished in 113.5977ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:35.3804085+05:30 0HL1GKN6AB2AM [INF] Request finished in 108.8872ms 304 application/javascript (15c52c40)
+2016-12-30T17:13:35.3960339+05:30 0HL1GKN6AB2AL [INF] Request finished in 142.4572ms 304 text/css (15c52c40)
+2016-12-30T17:13:35.4116594+05:30 0HL1GKN6AB2AN [INF] Request finished in 162.4129ms 304 text/css (15c52c40)
+2016-12-30T17:13:36.1772977+05:30 0HL1GKN6AB2AO [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:13:36.1772977+05:30 0HL1GKN6AB2AO [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:36.1929231+05:30 0HL1GKN6AB2AO [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:13:36.1929231+05:30 0HL1GKN6AB2AO [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:13:36.2085493+05:30 0HL1GKN6AB2AO [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 9.7493ms (afa2e885)
+2016-12-30T17:13:36.2397992+05:30 0HL1GKN6AB2AO [INF] Request finished in 47.5888ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:37.8023274+05:30 0HL1GKN6AB2AP [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/1?IsType=Edit   (e5be5b71)
+2016-12-30T17:13:37.8023274+05:30 0HL1GKN6AB2AP [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["1", "Edit"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:37.8179525+05:30 0HL1GKN6AB2AP [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:13:37.8179525+05:30 0HL1GKN6AB2AP [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T17:13:37.8335783+05:30 0HL1GKN6AB2AP [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 13.3192ms (afa2e885)
+2016-12-30T17:13:37.8960791+05:30 0HL1GKN6AB2AP [INF] Request finished in 38.9836ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:39.5367338+05:30 0HL1GKN6AB2AQ [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:13:39.5367338+05:30 0HL1GKN6AB2AQ [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:39.5367338+05:30 0HL1GKN6AB2AQ [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:13:39.5523586+05:30 0HL1GKN6AB2AQ [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:13:39.5523586+05:30 0HL1GKN6AB2AQ [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 8.4413ms (afa2e885)
+2016-12-30T17:13:39.6304855+05:30 0HL1GKN6AB2AQ [INF] Request finished in 84.443ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:41.7867741+05:30 0HL1GKN6AB2AR [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/0?IsType=Create   (e5be5b71)
+2016-12-30T17:13:41.8023996+05:30 0HL1GKN6AB2AR [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["0", "Create"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:41.8023996+05:30 0HL1GKN6AB2AR [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T17:13:41.8180243+05:30 0HL1GKN6AB2AR [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 8.0711ms (afa2e885)
+2016-12-30T17:13:41.8649003+05:30 0HL1GKN6AB2AR [INF] Request finished in 67.904ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:53.2557311+05:30 0HL1GKN6AB2AS [INF] Request starting HTTP/1.1 POST http://localhost:53303/Curd/Create/0 application/x-www-form-urlencoded 260 (e5be5b71)
+2016-12-30T17:13:53.3651079+05:30 0HL1GKN6AB2AS [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["CoreDemo.Models.DB.Reg"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:53.9744944+05:30 0HL1GKN6AB2AS [INF] Executed DbCommand (437ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [reg] ([address], [email], [mob], [name])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [id]
+FROM [reg]
+WHERE @@ROWCOUNT = 1 AND [id] = scope_identity(); (6438bdd5)
+2016-12-30T17:13:54.0057450+05:30 0HL1GKN6AB2AS [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2016-12-30T17:13:54.0213701+05:30 0HL1GKN6AB2AS [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 760.7741ms (afa2e885)
+2016-12-30T17:13:54.0213701+05:30 0HL1GKN6AB2AS [INF] Request finished in 770.9592ms 302  (15c52c40)
+2016-12-30T17:13:54.0213701+05:30 0HL1GKN6AB2AT [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:13:54.0369952+05:30 0HL1GKN6AB2AT [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:54.0369952+05:30 0HL1GKN6AB2AT [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:13:54.0369952+05:30 0HL1GKN6AB2AT [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:13:54.0994963+05:30 0HL1GKN6AB2AT [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 9.7415ms (afa2e885)
+2016-12-30T17:13:54.1151214+05:30 0HL1GKN6AB2AT [INF] Request finished in 83.4889ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:13:56.0526560+05:30 0HL1GKN6AB2AU [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Create/13?IsType=Edit   (e5be5b71)
+2016-12-30T17:13:56.0682819+05:30 0HL1GKN6AB2AU [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["13", "Edit"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:13:56.0682819+05:30 0HL1GKN6AB2AU [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:13:56.0839070+05:30 0HL1GKN6AB2AU [INF] Executing ViewResult, running view at path "/Views/Curd/Create.cshtml". (9707eebe)
+2016-12-30T17:13:56.1932841+05:30 0HL1GKN6AB2AU [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 22.1969ms (afa2e885)
+2016-12-30T17:13:56.2245340+05:30 0HL1GKN6AB2AU [INF] Request finished in 164.6924ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:14:01.5058800+05:30 0HL1GKN6AB2AV [INF] Request starting HTTP/1.1 POST http://localhost:53303/Curd/Create/13 application/x-www-form-urlencoded 263 (e5be5b71)
+2016-12-30T17:14:01.5058800+05:30 0HL1GKN6AB2AV [INF] Executing action method "CoreDemo.Controllers.CurdController.Create (CoreDemo)" with arguments (["CoreDemo.Models.DB.Reg"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:14:01.5215055+05:30 0HL1GKN6AB2AV [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:14:01.5683822+05:30 0HL1GKN6AB2AV [INF] Executed DbCommand (38ms) [Parameters=[@p4='?', @p0='?' (Size = 4000), @p1='?' (Size = 50), @p2='?' (Size = 50), @p3='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [reg] SET [address] = @p0, [email] = @p1, [mob] = @p2, [name] = @p3
+WHERE [id] = @p4;
+SELECT @@ROWCOUNT; (6438bdd5)
+2016-12-30T17:14:01.5996324+05:30 0HL1GKN6AB2AV [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2016-12-30T17:14:01.5996324+05:30 0HL1GKN6AB2AV [INF] Executed action "CoreDemo.Controllers.CurdController.Create (CoreDemo)" in 86.455ms (afa2e885)
+2016-12-30T17:14:01.5996324+05:30 0HL1GKN6AB2AV [INF] Request finished in 100.1461ms 302  (15c52c40)
+2016-12-30T17:14:01.6152568+05:30 0HL1GKN6AB2B0 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:14:01.6152568+05:30 0HL1GKN6AB2B0 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:14:01.6152568+05:30 0HL1GKN6AB2B0 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:14:01.6152568+05:30 0HL1GKN6AB2B0 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:14:01.6777579+05:30 0HL1GKN6AB2B0 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 13.9229ms (afa2e885)
+2016-12-30T17:14:01.6777579+05:30 0HL1GKN6AB2B0 [INF] Request finished in 73.5775ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:14:51.4105705+05:30 0HL1GKN6AB2B1 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:14:51.4105705+05:30 0HL1GKN6AB2B1 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:14:51.4105705+05:30 0HL1GKN6AB2B1 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:14:51.5355685+05:30 0HL1GKN6AB2B1 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:14:51.5668183+05:30 0HL1GKN6AB2B1 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 153.7571ms (afa2e885)
+2016-12-30T17:14:51.5824445+05:30 0HL1GKN6AB2B1 [INF] Request finished in 197.7863ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:14:55.7700190+05:30 0HL1GKN6AB2B2 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Curd/Delete/13   (e5be5b71)
+2016-12-30T17:14:55.7700190+05:30 0HL1GKN6AB2B2 [INF] Executing action method "CoreDemo.Controllers.CurdController.Delete (CoreDemo)" with arguments (["13"]) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:14:55.7700190+05:30 0HL1GKN6AB2B2 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:14:55.7856448+05:30 0HL1GKN6AB2B2 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [reg]
+WHERE [id] = @p0;
+SELECT @@ROWCOUNT; (6438bdd5)
+2016-12-30T17:14:55.7856448+05:30 0HL1GKN6AB2B2 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2016-12-30T17:14:55.8012696+05:30 0HL1GKN6AB2B2 [INF] Executed action "CoreDemo.Controllers.CurdController.Delete (CoreDemo)" in 27.6916ms (afa2e885)
+2016-12-30T17:14:55.8012696+05:30 0HL1GKN6AB2B2 [INF] Request finished in 37.1377ms 302  (15c52c40)
+2016-12-30T17:14:55.8168947+05:30 0HL1GKN6AB2B3 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:14:55.8168947+05:30 0HL1GKN6AB2B3 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:14:55.8168947+05:30 0HL1GKN6AB2B3 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:14:55.8168947+05:30 0HL1GKN6AB2B3 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:14:55.8481452+05:30 0HL1GKN6AB2B3 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 9.3944ms (afa2e885)
+2016-12-30T17:14:55.8481452+05:30 0HL1GKN6AB2B3 [INF] Request finished in 39.1397ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:15:04.4576765+05:30 0HL1GKN6AB2B4 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:15:04.4733013+05:30 0HL1GKN6AB2B4 [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:15:04.4733013+05:30 0HL1GKN6AB2B4 [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:15:04.4733013+05:30 0HL1GKN6AB2B4 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:04.4733013+05:30 0HL1GKN6AB2B4 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:04.4733013+05:30 0HL1GKN6AB2B4 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:04.4889267+05:30 0HL1GKN6AB2B4 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:04.5201773+05:30 0HL1GKN6AB2B4 [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 19.4849ms (afa2e885)
+2016-12-30T17:15:04.5514279+05:30 0HL1GKN6AB2B4 [INF] Request finished in 86.3701ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:15:05.4108185+05:30 0HL1GKN6AB2B5 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:15:05.4108185+05:30 0HL1GKN6AB2B5 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:15:05.4108185+05:30 0HL1GKN6AB2B5 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:15:05.4264436+05:30 0HL1GKN6AB2B5 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:15:05.4420691+05:30 0HL1GKN6AB2B5 [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 12.1092ms (afa2e885)
+2016-12-30T17:15:05.4889455+05:30 0HL1GKN6AB2B5 [INF] Request finished in 38.1148ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:15:06.8170932+05:30 0HL1GKN6AB2B6 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:15:06.8327190+05:30 0HL1GKN6AB2B6 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:15:06.8327190+05:30 0HL1GKN6AB2B6 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:06.8327190+05:30 0HL1GKN6AB2B6 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:15:06.8795943+05:30 0HL1GKN6AB2B6 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 9.3076ms (afa2e885)
+2016-12-30T17:15:06.9420969+05:30 0HL1GKN6AB2B6 [INF] Request finished in 89.7304ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:15:24.2861599+05:30 0HL1GKN6AB2B7 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:15:24.3017843+05:30 0HL1GKN6AB2B7 [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:15:24.3017843+05:30 0HL1GKN6AB2B7 [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:15:24.3017843+05:30 0HL1GKN6AB2B7 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:24.3017843+05:30 0HL1GKN6AB2B7 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:24.3017843+05:30 0HL1GKN6AB2B7 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:24.3174094+05:30 0HL1GKN6AB2B7 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:24.3174094+05:30 0HL1GKN6AB2B7 [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 17.9535ms (afa2e885)
+2016-12-30T17:15:24.3330352+05:30 0HL1GKN6AB2B7 [INF] Request finished in 38.5384ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:15:25.3486780+05:30 0HL1GKN6AB2B8 [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:15:25.3486780+05:30 0HL1GKN6AB2B8 [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:15:25.3486780+05:30 0HL1GKN6AB2B8 [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:15:25.3486780+05:30 0HL1GKN6AB2B8 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:15:25.3799290+05:30 0HL1GKN6AB2B8 [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 8.6055ms (afa2e885)
+2016-12-30T17:15:25.3799290+05:30 0HL1GKN6AB2B8 [INF] Request finished in 32.0358ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:15:26.2549451+05:30 0HL1GKN6AB2B9 [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:15:26.2705698+05:30 0HL1GKN6AB2B9 [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:15:26.2705698+05:30 0HL1GKN6AB2B9 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:15:26.2705698+05:30 0HL1GKN6AB2B9 [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:15:26.2861950+05:30 0HL1GKN6AB2B9 [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 8.557ms (afa2e885)
+2016-12-30T17:15:26.3018211+05:30 0HL1GKN6AB2B9 [INF] Request finished in 44.9494ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:27:14.5596722+05:30 0HL1GKN6AB2BA [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:27:14.5636750+05:30 0HL1GKN6AB2BA [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:27:14.5706790+05:30 0HL1GKN6AB2BA [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:14.5766835+05:30 0HL1GKN6AB2BA [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:27:14.5976966+05:30 0HL1GKN6AB2BA [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 17.9012ms (afa2e885)
+2016-12-30T17:27:14.6367215+05:30 0HL1GKN6AB2BA [INF] Request finished in 69.9644ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:27:15.4972662+05:30 0HL1GKN6AB2BB [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:27:15.4992671+05:30 0HL1GKN6AB2BB [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:27:15.5022689+05:30 0HL1GKN6AB2BB [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:27:15.5062714+05:30 0HL1GKN6AB2BB [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:15.5092738+05:30 0HL1GKN6AB2BB [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:15.5132764+05:30 0HL1GKN6AB2BB [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:15.5162781+05:30 0HL1GKN6AB2BB [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:15.5332890+05:30 0HL1GKN6AB2BB [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 19.3869ms (afa2e885)
+2016-12-30T17:27:15.6373546+05:30 0HL1GKN6AB2BB [INF] Request finished in 90.3129ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:27:16.7494111+05:30 0HL1GKN6AB2BC [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/Contact   (e5be5b71)
+2016-12-30T17:27:16.7514120+05:30 0HL1GKN6AB2BC [INF] Executing action method "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:27:16.7534136+05:30 0HL1GKN6AB2BC [INF] Executing ViewResult, running view at path "/Views/Home/Contact.cshtml". (9707eebe)
+2016-12-30T17:27:16.7584163+05:30 0HL1GKN6AB2BC [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[id], [e].[address], [e].[email], [e].[mob], [e].[name]
+FROM [reg] AS [e]
+WHERE [e].[id] = @__get_Item_0 (6438bdd5)
+2016-12-30T17:27:16.7814314+05:30 0HL1GKN6AB2BC [INF] Executed action "CoreDemo.Controllers.HomeController.Contact (CoreDemo)" in 9.6339ms (afa2e885)
+2016-12-30T17:27:16.8084483+05:30 0HL1GKN6AB2BC [INF] Request finished in 37.3578ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:27:18.4427560+05:30 0HL1GKN6AB2BD [INF] Request starting HTTP/1.1 GET http://localhost:53303/Home/About   (e5be5b71)
+2016-12-30T17:27:18.4467589+05:30 0HL1GKN6AB2BD [INF] Executing action method "CoreDemo.Controllers.HomeController.About (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:27:18.4497603+05:30 0HL1GKN6AB2BD [INF] Executing ViewResult, running view at path "/Views/Home/About.cshtml". (9707eebe)
+2016-12-30T17:27:18.4527620+05:30 0HL1GKN6AB2BD [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:18.4557637+05:30 0HL1GKN6AB2BD [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:18.4587658+05:30 0HL1GKN6AB2BD [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:18.4627687+05:30 0HL1GKN6AB2BD [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:18.4787795+05:30 0HL1GKN6AB2BD [INF] Executed action "CoreDemo.Controllers.HomeController.About (CoreDemo)" in 20.6145ms (afa2e885)
+2016-12-30T17:27:18.5268096+05:30 0HL1GKN6AB2BD [INF] Request finished in 81.2614ms 200 text/html; charset=utf-8 (15c52c40)
+2016-12-30T17:27:19.4080929+05:30 0HL1GKN6AB2BE [INF] Request starting HTTP/1.1 GET http://localhost:53303/   (e5be5b71)
+2016-12-30T17:27:19.4201008+05:30 0HL1GKN6AB2BE [INF] Executing action method "CoreDemo.Controllers.CurdController.Index (CoreDemo)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2016-12-30T17:27:19.4251035+05:30 0HL1GKN6AB2BE [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[id], [r].[address], [r].[email], [r].[mob], [r].[name]
+FROM [reg] AS [r] (6438bdd5)
+2016-12-30T17:27:19.4291063+05:30 0HL1GKN6AB2BE [INF] Executing ViewResult, running view at path "/Views/Curd/Index.cshtml". (9707eebe)
+2016-12-30T17:27:19.5071561+05:30 0HL1GKN6AB2BE [INF] Executed action "CoreDemo.Controllers.CurdController.Index (CoreDemo)" in 22.0677ms (afa2e885)
+2016-12-30T17:27:19.5271681+05:30 0HL1GKN6AB2BE [INF] Request finished in 111.7248ms 200 text/html; charset=utf-8 (15c52c40)
